@@ -11,25 +11,32 @@ values:T.ticketsM},{label:"Potencial (dispositivos)",color:DASH_C.royal,values:T
 return fmtDias(v)}}),dashLegend("leg-recrel",[{label:"Realizado",color:DASH_C.ok},{label:"Recebido (meta p/ não gerar backlog)",color:ORANGE}]),
 dashGoalBarChart("c-recrel",{labels:D.labelsM,values:T.realM,goals:T.recM,lineColor:ORANGE})}function renderAgendamento(){
 var O=D.own,T=D.team,me=D.first+" (você)";if(setText("lbl-first-month",D.labelsM[0].replace("*","")),
-document.getElementById("stat-backlog").textContent=dashFmtInt(O.backlog),O.hasData){function part(own,team,labels){return labels.map(function(l,i){
-return l+" "+(team[i]?fmtPct1(100*own[i]/team[i]):"—")}).join(" · ")}function drawPotDias(view){var isS="semanal"===view,labels=isS?D.labelsS:D.labelsM
-;dashLegend("leg-potreal",[{label:"Veículos agendados",color:DASH_C.royal},{label:"Meta ("+D.metaSemanal+"/semana)",color:ORANGE}]),
-dashGoalBarChart("c-potreal",{labels:labels,values:isS?O.potS:O.potM,goals:isS?O.metaS:O.metaM,barColor:DASH_C.royal,lineColor:ORANGE}),dashLegend("leg-dias",[{
-label:me,color:DASH_C.ok},{label:"Etapa (equipe)",color:ORANGE}]),dashSingleAxisLineChart("c-dias",{labels:labels,series:[{label:me,color:DASH_C.ok,
-values:isS?O.diasS:O.diasM,area:!0,fmt:fmtDias},{label:"Etapa (equipe)",color:ORANGE,values:isS?T.diasS:T.diasM,dashed:!0,fixed:!0,hideLabels:!0,fmt:fmtDias}],
-unit:"int",speed:.75})}dashLegend("leg-own",[{label:me+" — tickets",color:DASH_C.royal},{label:"Etapa (equipe)",color:ORANGE}]),
-dashSingleAxisLineChart("c-own-mensal",{labels:D.labelsM,series:[{label:me,color:DASH_C.royal,values:O.ticketsM,area:!0},{label:"Etapa (equipe)",color:ORANGE,
-values:T.ticketsM,dashed:!0,fixed:!0,hideLabels:!0}],unit:"int",speed:.75}),dashSingleAxisLineChart("c-own-semanal",{labels:D.labelsS,series:[{label:me,
-color:DASH_C.royal,values:O.ticketsS,area:!0},{label:"Etapa (equipe)",color:ORANGE,values:T.ticketsS,dashed:!0,fixed:!0,hideLabels:!0}],unit:"int",speed:.75}),
-setHTML("note-part-m","<strong>Sua participação na equipe</strong> (tickets seus ÷ tickets da equipe) — "+part(O.ticketsM,T.ticketsM,D.labelsM)+"."),
-setHTML("note-part-s","<strong>Sua participação na equipe</strong> — "+part(O.ticketsS,T.ticketsS,D.weekRanges)+"."),drawPotDias("mensal"),
+document.getElementById("stat-backlog").textContent=dashFmtInt(O.backlog),renderMetaStrip(),O.hasData){function part(own,team,labels){
+return labels.map(function(l,i){return l+" "+(team[i]?fmtPct1(100*own[i]/team[i]):"—")}).join(" · ")}function drawPotDias(view){
+var isS="semanal"===view,labels=isS?D.labelsS:D.labelsM;dashLegend("leg-potreal",[{label:"Veículos agendados",color:DASH_C.royal},{
+label:"Meta ("+D.metaSemanal+"/semana)",color:ORANGE}]),dashGoalBarChart("c-potreal",{labels:labels,values:isS?O.potS:O.potM,goals:isS?O.metaS:O.metaM,
+barColor:DASH_C.royal,lineColor:ORANGE}),dashLegend("leg-dias",[{label:me,color:DASH_C.ok},{label:"Etapa (equipe)",color:ORANGE}]),
+dashSingleAxisLineChart("c-dias",{labels:labels,series:[{label:me,color:DASH_C.ok,values:isS?O.diasS:O.diasM,area:!0,fmt:fmtDias},{label:"Etapa (equipe)",
+color:ORANGE,values:isS?T.diasS:T.diasM,dashed:!0,fixed:!0,hideLabels:!0,fmt:fmtDias}],unit:"int",speed:.75})}dashLegend("leg-own",[{label:me+" — tickets",
+color:DASH_C.royal},{label:"Etapa (equipe)",color:ORANGE}]),dashSingleAxisLineChart("c-own-mensal",{labels:D.labelsM,series:[{label:me,color:DASH_C.royal,
+values:O.ticketsM,area:!0},{label:"Etapa (equipe)",color:ORANGE,values:T.ticketsM,dashed:!0,fixed:!0,hideLabels:!0}],unit:"int",speed:.75}),
+dashSingleAxisLineChart("c-own-semanal",{labels:D.labelsS,series:[{label:me,color:DASH_C.royal,values:O.ticketsS,area:!0},{label:"Etapa (equipe)",color:ORANGE,
+values:T.ticketsS,dashed:!0,fixed:!0,hideLabels:!0}],unit:"int",speed:.75
+}),setHTML("note-part-m","<strong>Sua participação na equipe</strong> (tickets seus ÷ tickets da equipe) — "+part(O.ticketsM,T.ticketsM,D.labelsM)+"."),
+setHTML("note-part-s","<strong>Sua participação na equipe</strong> — "+part(O.ticketsS,T.ticketsS,D.weekRanges)+"."),drawPotDias("semanal"),
 bindToggle("potdias-toggle",drawPotDias),dashLegend("leg-recrel-own",[{label:"Realizado",color:DASH_C.ok},{label:"Recebido (meta p/ não gerar backlog)",
 color:ORANGE}]),dashGoalBarChart("c-recrel-own",{labels:D.labelsM,values:O.realM,goals:O.recM,lineColor:ORANGE})
-}else document.getElementById("own-wrap").hidden=!0,document.getElementById("own-empty").hidden=!1}function renderPrestador(){var P=D.prest,me=D.first+" (você)"
-;function drawVol(view){var isM="mensal"===view;setText("vol-period-label-1",isM?"por mês":"últimos 15 dias úteis"),dashSingleAxisLineChart("c-own-diario",{
-labels:isM?D.labelsM:P.volD.labels,series:[{label:"Tickets",color:DASH_C.royal,values:isM?P.volM:P.volD.values,area:!0}],unit:"int",speed:.75})}
-setText("lbl-first-month",D.labelsM[0].replace("*","")),dashSingleAxisLineChart("c-own-mensal",{labels:D.labelsM,series:[{label:me,color:DASH_C.ok,values:P.slaM
-}],unit:"pct"}),dashSingleAxisLineChart("c-own-semanal",{labels:D.labelsS,series:[{label:me,color:DASH_C.ok,values:P.slaS}],unit:"pct"}),drawVol("diario"),
+}else document.getElementById("own-wrap").hidden=!0,document.getElementById("own-empty").hidden=!1}function renderMetaStrip(){
+var O=D.own,nS=O.potS.length,nM=O.potM.length;function card(lbl,v,meta){
+var pct=meta?Math.round(100*v/meta):null,cls=null==pct?"mc-warn":pct>=100?"mc-ok":pct>=80?"mc-warn":"mc-bad"
+;return'<div class="meta-card"><div class="mc-lbl">'+lbl+'</div><div class="mc-num">'+dashFmtInt(v)+" <small>/ "+dashFmtInt(meta)+'</small></div><span class="mc-pct '+cls+'">'+(null==pct?"—":pct+"% da meta")+"</span></div>"
+}
+setHTML("meta-strip",card("Última semana · "+D.weekRanges[nS-1].replace(/^S-1 /,""),O.potS[nS-1],O.metaS[nS-1])+card("Semana anterior · "+D.weekRanges[nS-2].replace(/^S-2 /,""),O.potS[nS-2],O.metaS[nS-2])+card("Mês atual · "+D.labelsM[nM-1].replace("*","")+" até "+D.corte,O.potM[nM-1],O.metaM[nM-1]))
+}function renderPrestador(){var P=D.prest,me=D.first+" (você)";function drawVol(view){var isM="mensal"===view
+;setText("vol-period-label-1",isM?"por mês":"últimos 15 dias úteis"),dashSingleAxisLineChart("c-own-diario",{labels:isM?D.labelsM:P.volD.labels,series:[{
+label:"Tickets",color:DASH_C.royal,values:isM?P.volM:P.volD.values,area:!0}],unit:"int",speed:.75})}setText("lbl-first-month",D.labelsM[0].replace("*","")),
+dashSingleAxisLineChart("c-own-mensal",{labels:D.labelsM,series:[{label:me,color:DASH_C.ok,values:P.slaM}],unit:"pct"}),
+dashSingleAxisLineChart("c-own-semanal",{labels:D.labelsS,series:[{label:me,color:DASH_C.ok,values:P.slaS}],unit:"pct"}),drawVol("diario"),
 bindToggle("vol-toggle",drawVol),setHTML("note-prestador",P.note)}function renderEquipe(){
 var E=D.eq,T=D.team,CORES=[DASH_C.royal,DASH_C.ok,DASH_C.warn,DASH_C.danger,DASH_C.mist,DASH_C.inkSoft];function drawMeta(view){var isS="semanal"===view
 ;dashLegend("leg-eq-meta",[{label:"Veículos agendados (equipe)",color:DASH_C.royal},{label:"Meta da equipe",color:ORANGE}]),dashGoalBarChart("c-eq-meta",{
