@@ -1,0 +1,41 @@
+name: Exportar Intercom (Ongoing SMB)
+
+on:
+  schedule:
+    - cron: '0 11 * * 1'   # toda segunda às 08:00 (Brasília), antes da atualização das 9h
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/intercom.yml'
+      - 'scripts/intercom_reporting.mjs'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: intercom-export
+  cancel-in-progress: false
+
+jobs:
+  exportar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Exportar métricas do Intercom
+        env:
+          INTERCOM_TOKEN: ${{ secrets.INTERCOM_TOKEN }}
+        run: node scripts/intercom_reporting.mjs
+      - name: Salvar no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add dados/intercom_smb.json
+          git diff --cached --quiet && echo "Sem mudanças" && exit 0
+          git commit -m "Dados do Intercom $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push
