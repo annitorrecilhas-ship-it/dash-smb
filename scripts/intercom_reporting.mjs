@@ -84,6 +84,15 @@ for (let k = 3; k >= 0; k--) {
 const dow = (nowL.getUTCDay() + 6) % 7; // 0 = segunda
 const segunda = hoje - dow * 86400;
 for (let k = 3; k >= 1; k--) { const s = segunda - 7 * k * 86400; periodos.push({ tipo: 'semana', key: iso(s), start: s, end: s + 7 * 86400 - 1 }); }
+// Dias: os 10 últimos dias úteis até ontem (sem sábado, domingo e feriado nacional, incluindo carnaval)
+const FERIADOS = new Set(['2026-01-01', '2026-02-16', '2026-02-17', '2026-04-03', '2026-04-21', '2026-05-01', '2026-06-04', '2026-09-07', '2026-10-12', '2026-11-02', '2026-11-15', '2026-11-20', '2026-12-25',
+  '2027-01-01', '2027-02-08', '2027-02-09', '2027-03-26', '2027-04-21', '2027-05-01', '2027-05-27', '2027-09-07', '2027-10-12', '2027-11-02', '2027-11-15', '2027-11-20', '2027-12-25']);
+const dias = [];
+for (let t = hoje - 86400; dias.length < 10; t -= 86400) {
+  const wd = new Date((t - OFF * 3600) * 1000).getUTCDay();
+  if (wd !== 0 && wd !== 6 && !FERIADOS.has(iso(t))) dias.unshift(t);
+}
+for (const t of dias) periodos.push({ tipo: 'dia', key: iso(t), start: t, end: t + 86399 });
 
 // ---------- coleta por período ----------
 const DS = {
@@ -110,8 +119,8 @@ console.log(`  ${convRows.length} linhas`);
 for (const p of periodos) {
   console.log(`Período ${p.tipo} ${p.key} (${iso(p.start)} a ${iso(p.end)})`);
   const cheio = p.tipo === 'mes';
-  const E = (out.equipe[p.key + (p.tipo === 'semana' ? '@S' : '')] = {});
-  const K = p.key + (p.tipo === 'semana' ? '@S' : '');
+  const K = p.key + (p.tipo === 'semana' ? '@S' : p.tipo === 'dia' ? '@D' : '');
+  const E = (out.equipe[K] = {});
   out.periodos.push({ tipo: p.tipo, key: p.key, id: K, inicio: iso(p.start), fim: iso(p.end) });
 
   // SLA
@@ -149,7 +158,7 @@ for (const p of periodos) {
   const cv = convRows.filter((r) => { const t = toEpoch(r.conversation_started_at); return t !== null && t >= p.start && t <= p.end; });
   const cvEq = cv.filter((r) => r.currently_assigned_team_id === EQUIPE && inCanal(r));
   E.volume = new Set(cvEq.map((r) => r.conversation_id)).size;
-  E.tma = median(cvEq.map((r) => num(p.tipo === 'semana' ? r.time_from_first_assignment_to_close_in_office_hours : r.time_to_close_excluding_bot_inbox_in_office_hours)));
+  E.tma = median(cvEq.map((r) => num(p.tipo === 'semana' || p.tipo === 'dia' ? r.time_from_first_assignment_to_close_in_office_hours : r.time_to_close_excluding_bot_inbox_in_office_hours)));
   for (const [ag, rows] of Object.entries(groupBy(cvEq, 'first_closing_teammate_id')))
     setAg(ag, K, 'tma', median(rows.map((r) => num(r.time_to_first_close_excluding_bot_inbox_in_office_hours))));
   console.log(`  equipe: volume ${E.volume} | SLA1 ${E.sla1}% | SLAsub ${E.slaSub}% | CSAT ${E.csat}% (${E.n_csat}) | TME ${E.tme}s | TMA ${E.tma}s`);
