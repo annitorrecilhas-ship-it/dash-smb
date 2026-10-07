@@ -1,0 +1,78 @@
+<main>
+
+  <section class="block highlight">
+    <div class="block-title"><span class="dot"></span>Agendamento — seu destaque<span class="tag">Seu desempenho</span></div>
+    <div class="dash-card" style="padding-bottom:6px;">
+      <div class="dash-card-title">Veículos agendados x meta</div>
+      <div class="meta-strip" id="meta-strip"></div>
+    </div>
+    <div id="own-wrap">
+      <div class="dash-card" style="padding-bottom:0;">
+        <div class="dash-legend" id="leg-own"></div>
+      </div>
+      <div class="split-2">
+        <div class="dash-card">
+          <div class="dash-card-title">Tickets agendados — mensal (desde <span id="lbl-first-month"></span>)</div>
+          <div class="dash-canvas-wrap"><canvas id="c-own-mensal"></canvas></div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">Tickets agendados — últimas 3 semanas</div>
+          <div class="dash-canvas-wrap"><canvas id="c-own-semanal"></canvas></div>
+        </div>
+      </div>
+      <div class="split-2" style="border-top: 1px solid var(--border);">
+        <div class="dash-card">
+          <div class="block-note" style="padding:0;" id="note-part-m"></div>
+        </div>
+        <div class="dash-card">
+          <div class="block-note" style="padding:0;" id="note-part-s"></div>
+        </div>
+      </div>
+      <div class="dash-card" style="border-top: 1px solid var(--border); padding-bottom:0;">
+        <div class="dash-card-title with-toggle">
+          <span>Veículos agendados x meta &amp; Dias para agendar</span>
+          <div class="view-toggle" id="potdias-toggle">
+            <button type="button" data-view="mensal">Mensal</button>
+            <button type="button" class="active" data-view="semanal">Semanal</button>
+            <button type="button" data-view="diario">Diário</button>
+          </div>
+        </div>
+      </div>
+      <div class="split-2">
+        <div class="dash-card">
+          <div class="dash-card-title">Veículos agendados x meta (dispositivos)</div>
+          <div class="dash-legend" id="leg-potreal"></div>
+          <div class="dash-canvas-wrap dash-canvas-tall"><canvas id="c-potreal"></canvas></div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">Dias para agendar</div>
+          <div class="dash-legend" id="leg-dias"></div>
+          <div class="dash-canvas-wrap dash-canvas-tall"><canvas id="c-dias"></canvas></div>
+        </div>
+      </div>
+      <div class="split-2" style="border-top: 1px solid var(--border);">
+        <div class="dash-card" style="flex: 2.6;">
+          <div class="dash-card-title">SLA Agendamento — Recebido x Realizado</div>
+          <div class="dash-legend" id="leg-recrel-own"></div>
+          <div class="dash-canvas-wrap dash-canvas-tall"><canvas id="c-recrel-own"></canvas></div>
+        </div>
+        <div class="dash-card" style="flex: 0 0 190px;">
+          <div class="dash-card-title">Tickets pendente de agendamento</div>
+          <div class="stat-row">
+            <div class="stat-card">
+              <div class="stat-num" id="stat-backlog">—</div>
+              <div class="stat-lbl">tickets no seu nome, parados em "Agendar instalação"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dash-card" id="own-empty" hidden>
+      <div class="pending-note"><strong>Você ainda não tem tickets atribuídos neste período.</strong> Assim que os primeiros tickets de agendamento chegarem no seu nome, seus números aparecem aqui automaticamente. Enquanto isso, acompanhe a equipe na visão geral abaixo.</div>
+    </div>
+  </section>
+
+
+{{ATEND_PESSOA}}
+{{VISAO_GERAL}}
+</main>

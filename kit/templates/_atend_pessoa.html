@@ -1,0 +1,40 @@
+  <section class="block">
+    <div class="block-title">
+      <span class="dot"></span>Atendimento — seu desempenho<span class="tag">Intercom · chat/WhatsApp</span>
+      <div class="view-toggle" id="atend-toggle">
+        <button type="button" class="active" data-view="mensal">Mensal</button>
+        <button type="button" data-view="semanal">Semanal</button>
+        <button type="button" data-view="diario">Diário</button>
+      </div>
+    </div>
+    <div id="atend-wrap">
+      <div class="split-2">
+        <div class="dash-card">
+          <div class="dash-card-title">CSAT</div>
+          <div class="dash-legend" id="leg-atend-csat"></div>
+          <div class="dash-canvas-wrap"><canvas id="c-atend-csat"></canvas></div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">Conversas fechadas</div>
+          <div class="dash-legend" id="leg-atend-conv"></div>
+          <div class="dash-canvas-wrap"><canvas id="c-atend-conv"></canvas></div>
+        </div>
+      </div>
+      <div class="split-2" style="border-top: 1px solid var(--border);">
+        <div class="dash-card">
+          <div class="dash-card-title">TME — tempo da 1ª resposta (mediana)</div>
+          <div class="dash-legend" id="leg-atend-tme"></div>
+          <div class="dash-canvas-wrap"><canvas id="c-atend-tme"></canvas></div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">TMA — tempo até o 1º fechamento (mediana)</div>
+          <div class="dash-legend" id="leg-atend-tma"></div>
+          <div class="dash-canvas-wrap"><canvas id="c-atend-tma"></canvas></div>
+        </div>
+      </div>
+      <div class="dash-card" style="border-top: 1px solid var(--border);">
+        <div class="block-note" style="padding:0;" id="note-atend"></div>
+      </div>
+    </div>
+  </section>
+
