@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-09T19:19:43.858Z",
+ "gerado_em": "2026-10-13T13:33:12.888Z",
  "equipe_nome": "Ongoing SMB",
  "canais": [
   "WhatsApp",
@@ -32,14 +32,7 @@
    "key": "2026-10",
    "id": "2026-10",
    "inicio": "2026-10-01",
-   "fim": "2026-10-08"
-  },
-  {
-   "tipo": "semana",
-   "key": "2026-09-14",
-   "id": "2026-09-14@S",
-   "inicio": "2026-09-14",
-   "fim": "2026-09-20"
+   "fim": "2026-10-12"
   },
   {
    "tipo": "semana",
@@ -56,11 +49,11 @@
    "fim": "2026-10-04"
   },
   {
-   "tipo": "dia",
-   "key": "2026-09-25",
-   "id": "2026-09-25@D",
-   "inicio": "2026-09-25",
-   "fim": "2026-09-25"
+   "tipo": "semana",
+   "key": "2026-10-05",
+   "id": "2026-10-05@S",
+   "inicio": "2026-10-05",
+   "fim": "2026-10-11"
   },
   {
    "tipo": "dia",
@@ -124,6 +117,13 @@
    "id": "2026-10-08@D",
    "inicio": "2026-10-08",
    "fim": "2026-10-08"
+  },
+  {
+   "tipo": "dia",
+   "key": "2026-10-09",
+   "id": "2026-10-09@D",
+   "inicio": "2026-10-09",
+   "fim": "2026-10-09"
   }
  ],
  "equipe": {
@@ -161,26 +161,15 @@
    "tma": 6223
   },
   "2026-10": {
-   "sla1": 57.3,
-   "n_sla1": 293,
-   "slaSub": 63.2,
-   "n_slaSub": 2132,
-   "csat": 94.3,
-   "n_csat": 87,
-   "tme": 349,
-   "volume": 314,
-   "tma": 5806
-  },
-  "2026-09-14@S": {
-   "sla1": 53.9,
-   "n_sla1": 297,
-   "slaSub": 63.9,
-   "n_slaSub": 1929,
-   "csat": 97.6,
-   "n_csat": 83,
-   "tme": 397,
-   "volume": 319,
-   "tma": 4444
+   "sla1": 54.6,
+   "n_sla1": 337,
+   "slaSub": 63.1,
+   "n_slaSub": 2369,
+   "csat": 95,
+   "n_csat": 101,
+   "tme": 335,
+   "volume": 361,
+   "tma": 5811
   },
   "2026-09-21@S": {
    "sla1": 49.6,
@@ -204,16 +193,16 @@
    "volume": 261,
    "tma": 7241
   },
-  "2026-09-25@D": {
-   "sla1": 52.4,
-   "n_sla1": 42,
-   "slaSub": 67.4,
-   "n_slaSub": 267,
-   "csat": 92.9,
-   "n_csat": 14,
-   "tme": 318,
-   "volume": 50,
-   "tma": 4589
+  "2026-10-05@S": {
+   "sla1": 50,
+   "n_sla1": 248,
+   "slaSub": 60.9,
+   "n_slaSub": 1712,
+   "csat": 93.1,
+   "n_csat": 72,
+   "tme": 370,
+   "volume": 268,
+   "tma": 6328
   },
   "2026-09-28@D": {
    "sla1": 38.2,
@@ -313,6 +302,17 @@
    "tme": 544,
    "volume": 39,
    "tma": 9524
+  },
+  "2026-10-09@D": {
+   "sla1": 44.4,
+   "n_sla1": 36,
+   "slaSub": 62.3,
+   "n_slaSub": 236,
+   "csat": 100,
+   "n_csat": 14,
+   "tme": 286,
+   "volume": 39,
+   "tma": 5467
   }
  },
  "agentes": {
@@ -351,26 +351,15 @@
     "tma": 5458
    },
    "2026-10": {
-    "sla1": 81.3,
-    "n_sla1": 80,
-    "slaSub": 54.3,
-    "n_slaSub": 606,
-    "csat": 96.9,
-    "n_csat": 32,
-    "tme": 143,
-    "fechadas": 71,
-    "tma": 4048
-   },
-   "2026-09-14@S": {
-    "sla1": 81.1,
-    "n_sla1": 53,
-    "slaSub": 56,
-    "n_slaSub": 568,
-    "csat": 100,
-    "n_csat": 28,
-    "tme": 129,
-    "fechadas": 69,
-    "tma": 4384
+    "sla1": 80,
+    "n_sla1": 85,
+    "slaSub": 53.5,
+    "n_slaSub": 651,
+    "csat": 97.1,
+    "n_csat": 34,
+    "tme": 142,
+    "fechadas": 80,
+    "tma": 4534
    },
    "2026-09-21@S": {
     "sla1": 77.2,
@@ -394,16 +383,16 @@
     "fechadas": 85,
     "tma": 5259
    },
-   "2026-09-25@D": {
-    "sla1": 80,
-    "n_sla1": 10,
-    "slaSub": 68.9,
-    "n_slaSub": 103,
-    "csat": 100,
-    "n_csat": 8,
-    "tme": 74,
-    "fechadas": 17,
-    "tma": 2037
+   "2026-10-05@S": {
+    "sla1": 74.5,
+    "n_sla1": 55,
+    "slaSub": 49.2,
+    "n_slaSub": 457,
+    "csat": 95.2,
+    "n_csat": 21,
+    "tme": 126,
+    "fechadas": 50,
+    "tma": 4674
    },
    "2026-09-28@D": {
     "sla1": 75,
@@ -503,6 +492,17 @@
     "tme": 148,
     "fechadas": 5,
     "tma": 23488
+   },
+   "2026-10-09@D": {
+    "sla1": 60,
+    "n_sla1": 5,
+    "slaSub": 42.2,
+    "n_slaSub": 45,
+    "csat": 100,
+    "n_csat": 2,
+    "tme": 60,
+    "fechadas": 9,
+    "tma": 20685
    }
   },
   "Ingrid Paris": {
@@ -534,24 +534,14 @@
     "fechadas": 198
    },
    "2026-10": {
-    "sla1": 64.5,
-    "n_sla1": 31,
-    "slaSub": 37.3,
-    "n_slaSub": 268,
+    "sla1": 63.6,
+    "n_sla1": 33,
+    "slaSub": 38,
+    "n_slaSub": 276,
     "csat": 90.9,
     "n_csat": 11,
-    "tme": 151,
-    "fechadas": 22
-   },
-   "2026-09-14@S": {
-    "sla1": 66.7,
-    "n_sla1": 33,
-    "slaSub": 46.5,
-    "n_slaSub": 340,
-    "csat": 100,
-    "n_csat": 12,
-    "tme": 278,
-    "fechadas": 44
+    "tme": 133,
+    "fechadas": 23
    },
    "2026-09-21@S": {
     "sla1": 66.7,
@@ -573,15 +563,15 @@
     "tme": 187,
     "fechadas": 19
    },
-   "2026-09-25@D": {
-    "sla1": 50,
-    "n_sla1": 4,
-    "slaSub": 44.4,
-    "n_slaSub": 45,
+   "2026-10-05@S": {
+    "sla1": 66.7,
+    "n_sla1": 18,
+    "slaSub": 39.9,
+    "n_slaSub": 188,
     "csat": 100,
-    "n_csat": 3,
-    "tme": 212,
-    "fechadas": 5
+    "n_csat": 5,
+    "tme": 127,
+    "fechadas": 17
    },
    "2026-09-28@D": {
     "sla1": 75,
@@ -668,6 +658,14 @@
     "n_slaSub": 17,
     "tme": 203,
     "fechadas": 2
+   },
+   "2026-10-09@D": {
+    "sla1": 50,
+    "n_sla1": 2,
+    "slaSub": 62.5,
+    "n_slaSub": 8,
+    "tme": 22,
+    "fechadas": 1
    }
   },
   "Lorena Oliveira": {
@@ -737,24 +735,14 @@
     "fechadas": 189
    },
    "2026-10": {
-    "sla1": 97.4,
-    "n_sla1": 38,
-    "slaSub": 89.5,
-    "n_slaSub": 526,
+    "sla1": 97.7,
+    "n_sla1": 44,
+    "slaSub": 90.2,
+    "n_slaSub": 579,
     "csat": 100,
-    "n_csat": 25,
+    "n_csat": 28,
     "tme": 26,
-    "fechadas": 36
-   },
-   "2026-09-14@S": {
-    "sla1": 100,
-    "n_sla1": 56,
-    "slaSub": 88,
-    "n_slaSub": 518,
-    "csat": 96.6,
-    "n_csat": 29,
-    "tme": 21,
-    "fechadas": 55
+    "fechadas": 42
    },
    "2026-09-21@S": {
     "sla1": 100,
@@ -765,6 +753,16 @@
     "n_csat": 19,
     "tme": 18,
     "fechadas": 37
+   },
+   "2026-10-05@S": {
+    "sla1": 97.7,
+    "n_sla1": 44,
+    "slaSub": 90.2,
+    "n_slaSub": 579,
+    "csat": 100,
+    "n_csat": 28,
+    "tme": 26,
+    "fechadas": 42
    },
    "2026-10-05@D": {
     "sla1": 93.3,
@@ -805,6 +803,16 @@
     "n_csat": 7,
     "tme": 61,
     "fechadas": 7
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 6,
+    "slaSub": 96.2,
+    "n_slaSub": 53,
+    "csat": 100,
+    "n_csat": 3,
+    "tme": 33,
+    "fechadas": 6
    }
   },
   "Renan Antonio": {
@@ -839,24 +847,14 @@
     "fechadas": 21
    },
    "2026-10": {
-    "sla1": 42.9,
-    "n_sla1": 7,
+    "sla1": 33.3,
+    "n_sla1": 9,
     "slaSub": 14.3,
     "n_slaSub": 14,
     "csat": 100,
     "n_csat": 1,
     "tme": 297,
     "fechadas": 3
-   },
-   "2026-09-14@S": {
-    "sla1": 33.3,
-    "n_sla1": 6,
-    "slaSub": 54.3,
-    "n_slaSub": 35,
-    "csat": 100,
-    "n_csat": 2,
-    "tme": 862,
-    "fechadas": 4
    },
    "2026-09-21@S": {
     "sla1": 0,
@@ -876,12 +874,13 @@
     "tme": 297,
     "fechadas": 6
    },
-   "2026-09-25@D": {
-    "sla1": 0,
-    "n_sla1": 2,
-    "slaSub": 50,
-    "n_slaSub": 10,
-    "tme": 916
+   "2026-10-05@S": {
+    "sla1": 40,
+    "n_sla1": 5,
+    "slaSub": 0,
+    "n_slaSub": 4,
+    "tme": null,
+    "fechadas": 2
    },
    "2026-09-28@D": {
     "sla1": 25,
@@ -941,6 +940,12 @@
    "2026-10-07@D": {
     "tme": null,
     "fechadas": 1
+   },
+   "2026-10-09@D": {
+    "sla1": 0,
+    "n_sla1": 2,
+    "slaSub": null,
+    "n_slaSub": 0
    }
   },
   "Giovanna Santana": {
@@ -999,26 +1004,15 @@
     "tma": 5265
    },
    "2026-10": {
-    "sla1": 88.7,
-    "n_sla1": 53,
-    "slaSub": 73.9,
-    "n_slaSub": 767,
-    "csat": 92.7,
-    "n_csat": 41,
-    "tme": 88,
-    "fechadas": 83,
-    "tma": 6640
-   },
-   "2026-09-14@S": {
-    "sla1": 93.7,
-    "n_sla1": 63,
-    "slaSub": 69.4,
-    "n_slaSub": 929,
-    "csat": 95.8,
-    "n_csat": 48,
-    "tme": 77,
-    "fechadas": 115,
-    "tma": 5070
+    "sla1": 89.5,
+    "n_sla1": 57,
+    "slaSub": 73.7,
+    "n_slaSub": 876,
+    "csat": 94.1,
+    "n_csat": 51,
+    "tme": 85,
+    "fechadas": 97,
+    "tma": 6971
    },
    "2026-09-21@S": {
     "sla1": 91.1,
@@ -1042,16 +1036,16 @@
     "fechadas": 68,
     "tma": 6081
    },
-   "2026-09-25@D": {
-    "sla1": 92.9,
-    "n_sla1": 14,
-    "slaSub": 76.3,
-    "n_slaSub": 135,
-    "csat": 90,
-    "n_csat": 10,
-    "tme": 88,
-    "fechadas": 20,
-    "tma": 3475
+   "2026-10-05@S": {
+    "sla1": 94.9,
+    "n_sla1": 39,
+    "slaSub": 73.7,
+    "n_slaSub": 658,
+    "csat": 91.2,
+    "n_csat": 34,
+    "tme": 85,
+    "fechadas": 70,
+    "tma": 7093
    },
    "2026-09-28@D": {
     "sla1": 100,
@@ -1151,6 +1145,17 @@
     "tme": 132,
     "fechadas": 10,
     "tma": 10723
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 4,
+    "slaSub": 72.5,
+    "n_slaSub": 109,
+    "csat": 100,
+    "n_csat": 10,
+    "tme": 66,
+    "fechadas": 15,
+    "tma": 7690
    }
   },
   "Vanessa Guimarães": {
@@ -1186,26 +1191,15 @@
     "tma": 5256
    },
    "2026-10": {
-    "sla1": 45.5,
-    "n_sla1": 11,
-    "slaSub": 38.8,
-    "n_slaSub": 255,
-    "csat": 100,
-    "n_csat": 19,
-    "tme": 184,
-    "fechadas": 27,
-    "tma": 31144
-   },
-   "2026-09-14@S": {
-    "sla1": 47.1,
+    "sla1": 58.8,
     "n_sla1": 17,
-    "slaSub": 44.7,
-    "n_slaSub": 322,
+    "slaSub": 39.8,
+    "n_slaSub": 309,
     "csat": 100,
-    "n_csat": 14,
-    "tme": 151,
-    "fechadas": 40,
-    "tma": 5784
+    "n_csat": 20,
+    "tme": 168,
+    "fechadas": 34,
+    "tma": 31144
    },
    "2026-09-21@S": {
     "sla1": 71.4,
@@ -1227,15 +1221,16 @@
     "tme": 157,
     "fechadas": 14
    },
-   "2026-09-25@D": {
-    "sla1": 50,
-    "n_sla1": 2,
-    "slaSub": 50,
-    "n_slaSub": 70,
+   "2026-10-05@S": {
+    "sla1": 58.8,
+    "n_sla1": 17,
+    "slaSub": 39.8,
+    "n_slaSub": 309,
     "csat": 100,
-    "n_csat": 5,
-    "tme": 309,
-    "fechadas": 13
+    "n_csat": 20,
+    "tme": 168,
+    "fechadas": 34,
+    "tma": 31144
    },
    "2026-09-28@D": {
     "sla1": 50,
@@ -1302,6 +1297,16 @@
     "n_csat": 7,
     "tme": 159,
     "fechadas": 11
+   },
+   "2026-10-09@D": {
+    "sla1": 83.3,
+    "n_sla1": 6,
+    "slaSub": 44.4,
+    "n_slaSub": 54,
+    "csat": 100,
+    "n_csat": 1,
+    "tme": 43,
+    "fechadas": 7
    }
   },
   "Matheus Lopes": {
@@ -1335,14 +1340,14 @@
     "fechadas": 99
    },
    "2026-10": {
-    "sla1": 86.2,
-    "n_sla1": 58,
-    "slaSub": 74.6,
-    "n_slaSub": 759,
-    "csat": 95.8,
-    "n_csat": 24,
-    "tme": 70,
-    "fechadas": 41
+    "sla1": 86.9,
+    "n_sla1": 61,
+    "slaSub": 74.4,
+    "n_slaSub": 907,
+    "csat": 96.4,
+    "n_csat": 28,
+    "tme": 69,
+    "fechadas": 47
    },
    "2026-09-21@S": {
     "sla1": 95,
@@ -1364,15 +1369,15 @@
     "tme": 92,
     "fechadas": 41
    },
-   "2026-09-25@D": {
-    "sla1": 92.3,
-    "n_sla1": 13,
-    "slaSub": 82.8,
-    "n_slaSub": 134,
+   "2026-10-05@S": {
+    "sla1": 88.6,
+    "n_sla1": 44,
+    "slaSub": 73.6,
+    "n_slaSub": 662,
     "csat": 100,
-    "n_csat": 4,
-    "tme": 97,
-    "fechadas": 6
+    "n_csat": 20,
+    "tme": 67,
+    "fechadas": 34
    },
    "2026-09-28@D": {
     "sla1": 75,
@@ -1463,6 +1468,16 @@
     "n_csat": 5,
     "tme": 77,
     "fechadas": 5
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 3,
+    "slaSub": 73.6,
+    "n_slaSub": 148,
+    "csat": 100,
+    "n_csat": 4,
+    "tme": 67,
+    "fechadas": 7
    }
   },
   "Nathalia Batista": {
@@ -1498,24 +1513,14 @@
     "tma": 8045
    },
    "2026-10": {
-    "sla1": 61.1,
-    "n_sla1": 18,
-    "slaSub": 59.8,
-    "n_slaSub": 460,
-    "csat": 81.3,
-    "n_csat": 16,
-    "tme": 117,
-    "fechadas": 39
-   },
-   "2026-09-14@S": {
-    "sla1": 83.3,
-    "n_sla1": 12,
-    "slaSub": 59.2,
-    "n_slaSub": 184,
-    "csat": 100,
-    "n_csat": 4,
-    "tme": 87,
-    "fechadas": 17
+    "sla1": 71,
+    "n_sla1": 31,
+    "slaSub": 61.2,
+    "n_slaSub": 549,
+    "csat": 88,
+    "n_csat": 25,
+    "tme": 116,
+    "fechadas": 51
    },
    "2026-09-21@S": {
     "sla1": 70.8,
@@ -1538,15 +1543,15 @@
     "fechadas": 39,
     "tma": 11162
    },
-   "2026-09-25@D": {
-    "sla1": 100,
-    "n_sla1": 2,
-    "slaSub": 72.7,
-    "n_slaSub": 44,
-    "csat": 100,
-    "n_csat": 3,
-    "tme": 153,
-    "fechadas": 5
+   "2026-10-05@S": {
+    "sla1": 69,
+    "n_sla1": 29,
+    "slaSub": 62.3,
+    "n_slaSub": 451,
+    "csat": 95,
+    "n_csat": 20,
+    "tme": 131,
+    "fechadas": 42
    },
    "2026-09-28@D": {
     "sla1": 38.5,
@@ -1638,6 +1643,16 @@
     "n_csat": 2,
     "tme": 102,
     "fechadas": 9
+   },
+   "2026-10-09@D": {
+    "sla1": 84.6,
+    "n_sla1": 13,
+    "slaSub": 68.5,
+    "n_slaSub": 89,
+    "csat": 100,
+    "n_csat": 9,
+    "tme": 56,
+    "fechadas": 12
    }
   },
   "Ewerton Cerqueira": {
@@ -1672,26 +1687,15 @@
     "tma": 2782
    },
    "2026-10": {
-    "sla1": 46.2,
-    "n_sla1": 26,
-    "slaSub": 63.8,
-    "n_slaSub": 348,
-    "csat": 92.3,
-    "n_csat": 13,
-    "tme": 155,
-    "fechadas": 50,
+    "sla1": 48.3,
+    "n_sla1": 29,
+    "slaSub": 62.8,
+    "n_slaSub": 382,
+    "csat": 92.9,
+    "n_csat": 14,
+    "tme": 148,
+    "fechadas": 53,
     "tma": 11739
-   },
-   "2026-09-14@S": {
-    "sla1": 47.8,
-    "n_sla1": 23,
-    "slaSub": 65.6,
-    "n_slaSub": 395,
-    "csat": 92.6,
-    "n_csat": 27,
-    "tme": 144,
-    "fechadas": 65,
-    "tma": 2495
    },
    "2026-09-21@S": {
     "sla1": 60.7,
@@ -1714,15 +1718,15 @@
     "fechadas": 49,
     "tma": 11739
    },
-   "2026-09-25@D": {
-    "sla1": 14.3,
-    "n_sla1": 7,
-    "slaSub": 55.6,
-    "n_slaSub": 54,
-    "csat": 75,
-    "n_csat": 4,
-    "tme": 88,
-    "fechadas": 11
+   "2026-10-05@S": {
+    "sla1": 55.6,
+    "n_sla1": 18,
+    "slaSub": 62.1,
+    "n_slaSub": 280,
+    "csat": 100,
+    "n_csat": 9,
+    "tme": 125,
+    "fechadas": 32
    },
    "2026-09-28@D": {
     "sla1": 100,
@@ -1814,6 +1818,16 @@
     "n_csat": 1,
     "tme": 133,
     "fechadas": 5
+   },
+   "2026-10-09@D": {
+    "sla1": 66.7,
+    "n_sla1": 3,
+    "slaSub": 52.9,
+    "n_slaSub": 34,
+    "csat": 100,
+    "n_csat": 1,
+    "tme": 88,
+    "fechadas": 4
    }
   },
   "Supervisão": {
@@ -1860,17 +1874,6 @@
     "tme": 0,
     "fechadas": 51
    },
-   "2026-09-14@S": {
-    "sla1": 100,
-    "n_sla1": 130,
-    "slaSub": 96.6,
-    "n_slaSub": 436,
-    "csat": 96.4,
-    "n_csat": 28,
-    "tme": 0,
-    "fechadas": 81,
-    "tma": 2291
-   },
    "2026-09-21@S": {
     "sla1": 100,
     "n_sla1": 65,
@@ -1893,15 +1896,15 @@
     "fechadas": 62,
     "tma": 211
    },
-   "2026-09-25@D": {
+   "2026-10-05@S": {
     "sla1": 100,
-    "n_sla1": 14,
-    "slaSub": 100,
-    "n_slaSub": 27,
+    "n_sla1": 22,
+    "slaSub": 96.2,
+    "n_slaSub": 79,
     "csat": 100,
-    "n_csat": 2,
+    "n_csat": 4,
     "tme": 0,
-    "fechadas": 11
+    "fechadas": 21
    },
    "2026-09-28@D": {
     "sla1": 100,
@@ -2024,24 +2027,14 @@
     "fechadas": 189
    },
    "2026-10": {
-    "sla1": 97.7,
-    "n_sla1": 44,
-    "slaSub": 71.6,
-    "n_slaSub": 620,
-    "csat": 91.7,
-    "n_csat": 24,
-    "tme": 55,
-    "fechadas": 47
-   },
-   "2026-09-14@S": {
-    "sla1": 92.7,
-    "n_sla1": 41,
-    "slaSub": 88.4,
-    "n_slaSub": 620,
-    "csat": 90,
-    "n_csat": 30,
-    "tme": 23,
-    "fechadas": 50
+    "sla1": 97.8,
+    "n_sla1": 46,
+    "slaSub": 69.8,
+    "n_slaSub": 692,
+    "csat": 92.9,
+    "n_csat": 28,
+    "tme": 49,
+    "fechadas": 55
    },
    "2026-09-21@S": {
     "sla1": 97.7,
@@ -2063,15 +2056,15 @@
     "tme": 36,
     "fechadas": 48
    },
-   "2026-09-25@D": {
+   "2026-10-05@S": {
     "sla1": 100,
-    "n_sla1": 6,
-    "slaSub": 86.7,
-    "n_slaSub": 98,
-    "csat": 100,
-    "n_csat": 4,
-    "tme": 15,
-    "fechadas": 7
+    "n_sla1": 29,
+    "slaSub": 68,
+    "n_slaSub": 500,
+    "csat": 95,
+    "n_csat": 20,
+    "tme": 54,
+    "fechadas": 40
    },
    "2026-09-28@D": {
     "sla1": 100,
@@ -2162,6 +2155,16 @@
     "n_csat": 3,
     "tme": 38,
     "fechadas": 7
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 2,
+    "slaSub": 54.2,
+    "n_slaSub": 72,
+    "csat": 100,
+    "n_csat": 4,
+    "tme": 9,
+    "fechadas": 8
    }
   },
   "Beatryz Ferreira": {
@@ -2195,25 +2198,15 @@
     "tma": 39933
    },
    "2026-10": {
-    "sla1": 82.4,
-    "n_sla1": 34,
-    "slaSub": 61.8,
-    "n_slaSub": 479,
-    "csat": 90.3,
-    "n_csat": 31,
-    "tme": 134,
-    "fechadas": 60,
+    "sla1": 83.3,
+    "n_sla1": 42,
+    "slaSub": 64.1,
+    "n_slaSub": 599,
+    "csat": 89.2,
+    "n_csat": 37,
+    "tme": 132,
+    "fechadas": 73,
     "tma": 8348
-   },
-   "2026-09-14@S": {
-    "sla1": 87.5,
-    "n_sla1": 40,
-    "slaSub": 65.3,
-    "n_slaSub": 383,
-    "csat": 85.7,
-    "n_csat": 14,
-    "tme": 111,
-    "fechadas": 47
    },
    "2026-09-21@S": {
     "sla1": 100,
@@ -2224,6 +2217,17 @@
     "n_csat": 3,
     "tme": 139,
     "fechadas": 13
+   },
+   "2026-10-05@S": {
+    "sla1": 83.3,
+    "n_sla1": 42,
+    "slaSub": 64.1,
+    "n_slaSub": 599,
+    "csat": 89.2,
+    "n_csat": 37,
+    "tme": 132,
+    "fechadas": 73,
+    "tma": 8348
    },
    "2026-10-05@D": {
     "sla1": 100,
@@ -2265,6 +2269,16 @@
     "n_csat": 6,
     "tme": 299,
     "fechadas": 13
+   },
+   "2026-10-09@D": {
+    "sla1": 87.5,
+    "n_sla1": 8,
+    "slaSub": 73.3,
+    "n_slaSub": 120,
+    "csat": 83.3,
+    "n_csat": 6,
+    "tme": 111,
+    "fechadas": 13
    }
   },
   "Roberta Quiaratti": {
@@ -2297,25 +2311,14 @@
     "tma": 9863
    },
    "2026-10": {
-    "sla1": 83.3,
-    "n_sla1": 48,
-    "slaSub": 68.5,
-    "n_slaSub": 539,
-    "csat": 92.3,
-    "n_csat": 26,
-    "tme": 75,
-    "fechadas": 59
-   },
-   "2026-09-14@S": {
-    "sla1": 93.8,
-    "n_sla1": 32,
-    "slaSub": 71.2,
-    "n_slaSub": 292,
-    "csat": 95,
-    "n_csat": 20,
-    "tme": 50,
-    "fechadas": 31,
-    "tma": 9863
+    "sla1": 76.8,
+    "n_sla1": 56,
+    "slaSub": 67.4,
+    "n_slaSub": 607,
+    "csat": 93.5,
+    "n_csat": 31,
+    "tme": 76,
+    "fechadas": 66
    },
    "2026-09-21@S": {
     "sla1": 80,
@@ -2337,15 +2340,15 @@
     "tme": 70,
     "fechadas": 55
    },
-   "2026-09-25@D": {
-    "sla1": 40,
-    "n_sla1": 5,
-    "slaSub": 56.9,
-    "n_slaSub": 58,
-    "csat": 100,
-    "n_csat": 3,
-    "tme": 157,
-    "fechadas": 10
+   "2026-10-05@S": {
+    "sla1": 70.7,
+    "n_sla1": 41,
+    "slaSub": 63.9,
+    "n_slaSub": 421,
+    "csat": 95,
+    "n_csat": 20,
+    "tme": 98,
+    "fechadas": 46
    },
    "2026-09-28@D": {
     "sla1": 90.9,
@@ -2436,6 +2439,16 @@
     "n_csat": 4,
     "tme": 108,
     "fechadas": 5
+   },
+   "2026-10-09@D": {
+    "sla1": 37.5,
+    "n_sla1": 8,
+    "slaSub": 58.8,
+    "n_slaSub": 68,
+    "csat": 100,
+    "n_csat": 5,
+    "tme": 392,
+    "fechadas": 7
    }
   },
   "Thauane Caldeira": {
@@ -2468,24 +2481,14 @@
     "fechadas": 166
    },
    "2026-10": {
-    "sla1": 96.7,
-    "n_sla1": 60,
-    "slaSub": 74.8,
-    "n_slaSub": 437,
+    "sla1": 97,
+    "n_sla1": 66,
+    "slaSub": 74.7,
+    "n_slaSub": 495,
     "csat": 100,
-    "n_csat": 27,
+    "n_csat": 31,
     "tme": 41,
-    "fechadas": 44
-   },
-   "2026-09-14@S": {
-    "sla1": 95,
-    "n_sla1": 40,
-    "slaSub": 71.1,
-    "n_slaSub": 343,
-    "csat": 87.5,
-    "n_csat": 16,
-    "tme": 65,
-    "fechadas": 40
+    "fechadas": 50
    },
    "2026-09-21@S": {
     "sla1": 94,
@@ -2507,15 +2510,15 @@
     "tme": 51,
     "fechadas": 43
    },
-   "2026-09-25@D": {
-    "sla1": 100,
-    "n_sla1": 9,
-    "slaSub": 73.9,
-    "n_slaSub": 69,
+   "2026-10-05@S": {
+    "sla1": 97.6,
+    "n_sla1": 42,
+    "slaSub": 76.6,
+    "n_slaSub": 308,
     "csat": 100,
-    "n_csat": 1,
-    "tme": 39,
-    "fechadas": 8
+    "n_csat": 20,
+    "tme": 41,
+    "fechadas": 33
    },
    "2026-09-28@D": {
     "sla1": 100,
@@ -2606,6 +2609,16 @@
     "n_csat": 6,
     "tme": 54,
     "fechadas": 7
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 6,
+    "slaSub": 74.1,
+    "n_slaSub": 58,
+    "csat": 100,
+    "n_csat": 4,
+    "tme": 53,
+    "fechadas": 6
    }
   },
   "Isabella Souza": {
@@ -2632,11 +2645,7 @@
     "csat": 100,
     "n_csat": 1,
     "tme": null,
-    "fechadas": 9
-   },
-   "2026-09-14@S": {
-    "tme": 6,
-    "fechadas": 13
+    "fechadas": 25
    },
    "2026-09-21@S": {
     "csat": 100,
@@ -2655,9 +2664,9 @@
     "fechadas": 14,
     "tma": 27533
    },
-   "2026-09-25@D": {
+   "2026-10-05@S": {
     "tme": null,
-    "fechadas": 3
+    "fechadas": 21
    },
    "2026-09-28@D": {
     "tme": null,
@@ -2700,6 +2709,10 @@
    "2026-10-08@D": {
     "tme": null,
     "fechadas": 2
+   },
+   "2026-10-09@D": {
+    "tme": null,
+    "fechadas": 16
    }
   },
   "Felipe Andrade": {
@@ -2732,22 +2745,13 @@
    "2026-10": {
     "sla1": 66.7,
     "n_sla1": 3,
-    "slaSub": 76.9,
-    "n_slaSub": 121,
+    "slaSub": 77.6,
+    "n_slaSub": 125,
     "csat": 100,
     "n_csat": 4,
-    "tme": 84,
+    "tme": 86,
     "fechadas": 8,
     "tma": 6179
-   },
-   "2026-09-14@S": {
-    "sla1": 0,
-    "n_sla1": 1,
-    "slaSub": 0,
-    "n_slaSub": 2,
-    "csat": 100,
-    "n_csat": 1,
-    "tme": null
    },
    "2026-09-21@S": {
     "sla1": 25,
@@ -2769,6 +2773,16 @@
     "tme": 67,
     "fechadas": 2,
     "tma": 6179
+   },
+   "2026-10-05@S": {
+    "sla1": 100,
+    "n_sla1": 1,
+    "slaSub": 74,
+    "n_slaSub": 104,
+    "csat": 100,
+    "n_csat": 3,
+    "tme": 207,
+    "fechadas": 7
    },
    "2026-09-28@D": {
     "sla1": null,
@@ -2827,6 +2841,13 @@
     "n_slaSub": 12,
     "tme": 2207,
     "fechadas": 2
+   },
+   "2026-10-09@D": {
+    "sla1": null,
+    "n_sla1": 0,
+    "slaSub": 100,
+    "n_slaSub": 4,
+    "tme": 207
    }
   },
   "Mateus Moreira": {
@@ -2865,16 +2886,6 @@
     "tme": 506,
     "fechadas": 20
    },
-   "2026-09-14@S": {
-    "sla1": 38.5,
-    "n_sla1": 13,
-    "slaSub": 30.2,
-    "n_slaSub": 106,
-    "csat": 100,
-    "n_csat": 7,
-    "tme": 357,
-    "fechadas": 21
-   },
    "2026-09-21@S": {
     "sla1": 63.6,
     "n_sla1": 11,
@@ -2895,16 +2906,6 @@
     "tme": 343,
     "fechadas": 46,
     "tma": 15278
-   },
-   "2026-09-25@D": {
-    "sla1": 100,
-    "n_sla1": 2,
-    "slaSub": 39.1,
-    "n_slaSub": 23,
-    "csat": 100,
-    "n_csat": 2,
-    "tme": 340,
-    "fechadas": 7
    },
    "2026-09-28@D": {
     "sla1": 100,
@@ -2991,24 +2992,14 @@
     "tma": 29664
    },
    "2026-10": {
-    "sla1": 64.3,
-    "n_sla1": 28,
-    "slaSub": 20.3,
-    "n_slaSub": 192,
-    "csat": 87.5,
-    "n_csat": 8,
+    "sla1": 66.7,
+    "n_sla1": 30,
+    "slaSub": 20.5,
+    "n_slaSub": 210,
+    "csat": 88.9,
+    "n_csat": 9,
     "tme": 242,
-    "fechadas": 18
-   },
-   "2026-09-14@S": {
-    "sla1": 71.7,
-    "n_sla1": 46,
-    "slaSub": 32.7,
-    "n_slaSub": 447,
-    "csat": 92,
-    "n_csat": 25,
-    "tme": 171,
-    "fechadas": 52
+    "fechadas": 20
    },
    "2026-09-21@S": {
     "sla1": 61.1,
@@ -3030,15 +3021,15 @@
     "tme": 147,
     "fechadas": 28
    },
-   "2026-09-25@D": {
-    "sla1": 20,
-    "n_sla1": 5,
-    "slaSub": 23.3,
-    "n_slaSub": 43,
-    "csat": 0,
-    "n_csat": 1,
-    "tme": 320,
-    "fechadas": 4
+   "2026-10-05@S": {
+    "sla1": 57.1,
+    "n_sla1": 14,
+    "slaSub": 20.6,
+    "n_slaSub": 107,
+    "csat": 85.7,
+    "n_csat": 7,
+    "tme": 342,
+    "fechadas": 12
    },
    "2026-09-28@D": {
     "sla1": 80,
@@ -3127,6 +3118,16 @@
     "n_csat": 2,
     "tme": 347,
     "fechadas": 2
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 2,
+    "slaSub": 22.2,
+    "n_slaSub": 18,
+    "csat": 100,
+    "n_csat": 1,
+    "tme": 335,
+    "fechadas": 2
    }
   },
   "Moises Gonçalves": {
@@ -3156,13 +3157,6 @@
     "n_slaSub": 2,
     "tme": 542,
     "fechadas": 8
-   },
-   "2026-09-14@S": {
-    "sla1": 0,
-    "n_sla1": 2,
-    "slaSub": null,
-    "n_slaSub": 0,
-    "tme": 0
    }
   },
   "Luana Silva": {
@@ -3210,17 +3204,6 @@
     "fechadas": 5,
     "tma": 1446
    },
-   "2026-09-14@S": {
-    "sla1": 100,
-    "n_sla1": 6,
-    "slaSub": 70.8,
-    "n_slaSub": 106,
-    "csat": 100,
-    "n_csat": 9,
-    "tme": 20,
-    "fechadas": 26,
-    "tma": 6315
-   },
    "2026-09-21@S": {
     "sla1": null,
     "n_sla1": 0,
@@ -3237,10 +3220,16 @@
     "n_csat": 1,
     "fechadas": 3
    },
-   "2026-09-25@D": {
+   "2026-10-05@S": {
+    "sla1": 100,
+    "n_sla1": 1,
+    "slaSub": 33.3,
+    "n_slaSub": 3,
     "csat": 100,
     "n_csat": 1,
-    "fechadas": 1
+    "tme": 0,
+    "fechadas": 5,
+    "tma": 1446
    },
    "2026-09-28@D": {
     "csat": 100,
@@ -3277,6 +3266,15 @@
    "2026-09": {
     "tme": null,
     "fechadas": 1
+   },
+   "2026-10": {
+    "tme": null
+   },
+   "2026-10-05@S": {
+    "tme": null
+   },
+   "2026-10-09@D": {
+    "tme": null
    }
   },
   "Eduardo Vilela": {
@@ -3310,16 +3308,11 @@
     "fechadas": 110,
     "tma": 5535
    },
-   "2026-09-14@S": {
-    "sla1": 90.7,
-    "n_sla1": 43,
-    "slaSub": 48.9,
-    "n_slaSub": 366,
-    "csat": 85.2,
-    "n_csat": 27,
-    "tme": 61,
-    "fechadas": 44,
-    "tma": 5535
+   "2026-10": {
+    "sla1": 100,
+    "n_sla1": 3,
+    "slaSub": null,
+    "n_slaSub": 0
    },
    "2026-09-21@S": {
     "sla1": 95.6,
@@ -3331,10 +3324,17 @@
     "tme": 74,
     "fechadas": 34
    },
-   "2026-09-25@D": {
-    "csat": 100,
-    "n_csat": 1,
-    "tme": null
+   "2026-10-05@S": {
+    "sla1": 100,
+    "n_sla1": 3,
+    "slaSub": null,
+    "n_slaSub": 0
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 2,
+    "slaSub": null,
+    "n_slaSub": 0
    }
   },
   "Amanda Sena": {
@@ -3392,24 +3392,14 @@
     "fechadas": 164
    },
    "2026-10": {
-    "sla1": 80,
-    "n_sla1": 50,
-    "slaSub": 87.8,
-    "n_slaSub": 255,
-    "csat": 92,
-    "n_csat": 25,
-    "tme": 27,
-    "fechadas": 46
-   },
-   "2026-09-14@S": {
-    "sla1": 78.6,
-    "n_sla1": 28,
-    "slaSub": 93.2,
-    "n_slaSub": 103,
-    "csat": 94.4,
-    "n_csat": 18,
-    "tme": 25,
-    "fechadas": 27
+    "sla1": 82.5,
+    "n_sla1": 63,
+    "slaSub": 89.1,
+    "n_slaSub": 311,
+    "csat": 93.1,
+    "n_csat": 29,
+    "tme": 26,
+    "fechadas": 54
    },
    "2026-09-21@S": {
     "sla1": 83.3,
@@ -3431,15 +3421,15 @@
     "tme": 24,
     "fechadas": 38
    },
-   "2026-09-25@D": {
-    "sla1": 90.9,
-    "n_sla1": 11,
-    "slaSub": 85.9,
-    "n_slaSub": 64,
-    "csat": 85.7,
-    "n_csat": 7,
-    "tme": 62,
-    "fechadas": 8
+   "2026-10-05@S": {
+    "sla1": 80.4,
+    "n_sla1": 46,
+    "slaSub": 89.8,
+    "n_slaSub": 225,
+    "csat": 91.3,
+    "n_csat": 23,
+    "tme": 28,
+    "fechadas": 38
    },
    "2026-09-29@D": {
     "sla1": 85.7,
@@ -3510,6 +3500,16 @@
     "n_csat": 6,
     "tme": 39,
     "fechadas": 12
+   },
+   "2026-10-09@D": {
+    "sla1": 92.3,
+    "n_sla1": 13,
+    "slaSub": 94.6,
+    "n_slaSub": 56,
+    "csat": 100,
+    "n_csat": 4,
+    "tme": 19,
+    "fechadas": 8
    }
   },
   "Cobli": {
@@ -3527,11 +3527,7 @@
    },
    "2026-10": {
     "tme": null,
-    "fechadas": 658
-   },
-   "2026-09-14@S": {
-    "tme": null,
-    "fechadas": 461
+    "fechadas": 761
    },
    "2026-09-21@S": {
     "tme": null,
@@ -3541,9 +3537,9 @@
     "tme": null,
     "fechadas": 541
    },
-   "2026-09-25@D": {
+   "2026-10-05@S": {
     "tme": null,
-    "fechadas": 107
+    "fechadas": 558
    },
    "2026-09-28@D": {
     "tme": null,
@@ -3580,6 +3576,10 @@
    "2026-10-08@D": {
     "tme": null,
     "fechadas": 109
+   },
+   "2026-10-09@D": {
+    "tme": null,
+    "fechadas": 102
    }
   },
   "Consultor": {
@@ -3596,24 +3596,14 @@
     "fechadas": 133
    },
    "2026-10": {
-    "sla1": 62.5,
-    "n_sla1": 16,
-    "slaSub": 80.2,
-    "n_slaSub": 511,
+    "sla1": 69,
+    "n_sla1": 29,
+    "slaSub": 82,
+    "n_slaSub": 656,
     "csat": 100,
-    "n_csat": 25,
-    "tme": 161,
-    "fechadas": 49
-   },
-   "2026-09-14@S": {
-    "sla1": 57.1,
-    "n_sla1": 7,
-    "slaSub": 80.3,
-    "n_slaSub": 315,
-    "csat": 100,
-    "n_csat": 18,
-    "tme": 153,
-    "fechadas": 28
+    "n_csat": 38,
+    "tme": 129,
+    "fechadas": 75
    },
    "2026-09-21@S": {
     "sla1": 53.8,
@@ -3635,13 +3625,15 @@
     "tme": 140,
     "fechadas": 39
    },
-   "2026-09-25@D": {
-    "sla1": 0,
-    "n_sla1": 2,
-    "slaSub": 30,
-    "n_slaSub": 10,
-    "tme": 271,
-    "fechadas": 2
+   "2026-10-05@S": {
+    "sla1": 73.3,
+    "n_sla1": 15,
+    "slaSub": 79.8,
+    "n_slaSub": 411,
+    "csat": 100,
+    "n_csat": 24,
+    "tme": 107,
+    "fechadas": 45
    },
    "2026-09-28@D": {
     "sla1": 100,
@@ -3732,6 +3724,16 @@
     "n_csat": 2,
     "tme": 135,
     "fechadas": 5
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 2,
+    "slaSub": 87.7,
+    "n_slaSub": 81,
+    "csat": 100,
+    "n_csat": 5,
+    "tme": 211,
+    "fechadas": 9
    }
   },
   "Julia Reis": {
@@ -3749,24 +3751,14 @@
     "fechadas": 144
    },
    "2026-10": {
-    "sla1": 61.9,
-    "n_sla1": 21,
-    "slaSub": 84.4,
-    "n_slaSub": 167,
+    "sla1": 61.5,
+    "n_sla1": 26,
+    "slaSub": 83.4,
+    "n_slaSub": 205,
     "csat": 100,
-    "n_csat": 15,
+    "n_csat": 19,
     "tme": 38,
-    "fechadas": 44
-   },
-   "2026-09-14@S": {
-    "sla1": 61.4,
-    "n_sla1": 44,
-    "slaSub": 80.6,
-    "n_slaSub": 253,
-    "csat": 90.9,
-    "n_csat": 33,
-    "tme": 50,
-    "fechadas": 62
+    "fechadas": 54
    },
    "2026-09-21@S": {
     "sla1": 60.9,
@@ -3788,15 +3780,15 @@
     "tme": 22,
     "fechadas": 29
    },
-   "2026-09-25@D": {
-    "sla1": 0,
-    "n_sla1": 1,
-    "slaSub": 66.7,
-    "n_slaSub": 6,
+   "2026-10-05@S": {
+    "sla1": 47.4,
+    "n_sla1": 19,
+    "slaSub": 81.9,
+    "n_slaSub": 160,
     "csat": 100,
-    "n_csat": 1,
-    "tme": 494,
-    "fechadas": 2
+    "n_csat": 15,
+    "tme": 49,
+    "fechadas": 42
    },
    "2026-09-28@D": {
     "sla1": 50,
@@ -3883,6 +3875,16 @@
     "n_csat": 3,
     "tme": 122,
     "fechadas": 9
+   },
+   "2026-10-09@D": {
+    "sla1": 60,
+    "n_sla1": 5,
+    "slaSub": 78.9,
+    "n_slaSub": 38,
+    "csat": 100,
+    "n_csat": 4,
+    "tme": 49,
+    "fechadas": 10
    }
   },
   "Mikaella Oliveira": {
@@ -3901,16 +3903,6 @@
    "2026-10": {
     "fechadas": 1
    },
-   "2026-09-14@S": {
-    "sla1": 56.5,
-    "n_sla1": 62,
-    "slaSub": 79,
-    "n_slaSub": 281,
-    "csat": 97,
-    "n_csat": 33,
-    "tme": 66,
-    "fechadas": 74
-   },
    "2026-09-21@S": {
     "sla1": 100,
     "n_sla1": 4,
@@ -3924,9 +3916,8 @@
    "2026-09-28@S": {
     "fechadas": 1
    },
-   "2026-09-25@D": {
-    "csat": 100,
-    "n_csat": 1
+   "2026-10-05@S": {
+    "fechadas": 1
    },
    "2026-10-02@D": {
     "fechadas": 1
@@ -3962,18 +3953,14 @@
     "fechadas": 331
    },
    "2026-10": {
-    "sla1": 79.2,
-    "n_sla1": 130,
+    "sla1": 79.3,
+    "n_sla1": 150,
     "slaSub": 79.4,
-    "n_slaSub": 685,
-    "csat": 100,
-    "n_csat": 63,
-    "tme": 55,
-    "fechadas": 147
-   },
-   "2026-09-14@S": {
-    "csat": 100,
-    "n_csat": 1
+    "n_slaSub": 761,
+    "csat": 98.6,
+    "n_csat": 74,
+    "tme": 52,
+    "fechadas": 166
    },
    "2026-09-21@S": {
     "sla1": 85.4,
@@ -3995,15 +3982,15 @@
     "tme": 46,
     "fechadas": 122
    },
-   "2026-09-25@D": {
-    "sla1": 81.3,
-    "n_sla1": 16,
-    "slaSub": 82.8,
-    "n_slaSub": 87,
-    "csat": 91.7,
-    "n_csat": 12,
-    "tme": 51,
-    "fechadas": 18
+   "2026-10-05@S": {
+    "sla1": 78.3,
+    "n_sla1": 106,
+    "slaSub": 79.2,
+    "n_slaSub": 557,
+    "csat": 98,
+    "n_csat": 50,
+    "tme": 52,
+    "fechadas": 117
    },
    "2026-09-28@D": {
     "sla1": 85,
@@ -4094,6 +4081,16 @@
     "n_csat": 8,
     "tme": 42,
     "fechadas": 22
+   },
+   "2026-10-09@D": {
+    "sla1": 80,
+    "n_sla1": 20,
+    "slaSub": 78.9,
+    "n_slaSub": 76,
+    "csat": 90.9,
+    "n_csat": 11,
+    "tme": 30,
+    "fechadas": 20
    }
   },
   "Daniela Rodrigues": {
@@ -4113,22 +4110,12 @@
    "2026-10": {
     "sla1": null,
     "n_sla1": 0,
-    "slaSub": 31.8,
-    "n_slaSub": 22,
+    "slaSub": 29,
+    "n_slaSub": 31,
     "csat": 100,
-    "n_csat": 4,
-    "tme": 1263,
-    "fechadas": 30
-   },
-   "2026-09-14@S": {
-    "sla1": null,
-    "n_sla1": 0,
-    "slaSub": 34.8,
-    "n_slaSub": 46,
-    "csat": 85.7,
-    "n_csat": 7,
-    "tme": 913,
-    "fechadas": 27
+    "n_csat": 5,
+    "tme": 893,
+    "fechadas": 35
    },
    "2026-09-21@S": {
     "sla1": null,
@@ -4150,15 +4137,15 @@
     "tme": 1354,
     "fechadas": 46
    },
-   "2026-09-25@D": {
+   "2026-10-05@S": {
     "sla1": null,
     "n_sla1": 0,
-    "slaSub": 50,
-    "n_slaSub": 6,
+    "slaSub": 21.7,
+    "n_slaSub": 23,
     "csat": 100,
     "n_csat": 2,
-    "tme": 258,
-    "fechadas": 5
+    "tme": 1172,
+    "fechadas": 18
    },
    "2026-09-28@D": {
     "sla1": 100,
@@ -4227,6 +4214,16 @@
     "slaSub": 16.7,
     "n_slaSub": 6,
     "tme": 4020
+   },
+   "2026-10-09@D": {
+    "sla1": null,
+    "n_sla1": 0,
+    "slaSub": 22.2,
+    "n_slaSub": 9,
+    "csat": 100,
+    "n_csat": 1,
+    "tme": 570,
+    "fechadas": 6
    }
   },
   "Ingrid Camargo": {
@@ -4243,16 +4240,6 @@
    "2026-09": {
     "tme": 159,
     "fechadas": 7
-   },
-   "2026-09-14@S": {
-    "sla1": 100,
-    "n_sla1": 1,
-    "slaSub": 70,
-    "n_slaSub": 20,
-    "csat": 100,
-    "n_csat": 1,
-    "tme": 149,
-    "fechadas": 3
    }
   },
   "Giovanna Gomes": {
@@ -4274,9 +4261,6 @@
     "n_slaSub": 6,
     "fechadas": 2
    },
-   "2026-09-14@S": {
-    "tme": null
-   },
    "2026-09-21@S": {
     "sla1": 40,
     "n_sla1": 5,
@@ -4290,15 +4274,12 @@
    "2026-09-28@S": {
     "fechadas": 1
    },
-   "2026-09-25@D": {
+   "2026-10-05@S": {
     "sla1": null,
     "n_sla1": 0,
-    "slaSub": 65,
-    "n_slaSub": 20,
-    "csat": 100,
-    "n_csat": 1,
-    "tme": 143,
-    "fechadas": 2
+    "slaSub": 50,
+    "n_slaSub": 6,
+    "fechadas": 1
    },
    "2026-10-02@D": {
     "fechadas": 1
@@ -4362,7 +4343,13 @@
    "2026-09": {
     "tme": null
    },
-   "2026-09-14@S": {
+   "2026-10": {
+    "tme": null
+   },
+   "2026-10-05@S": {
+    "tme": null
+   },
+   "2026-10-09@D": {
     "tme": null
    }
   },
@@ -4372,13 +4359,6 @@
     "tma": 9339
    },
    "2026-09": {
-    "tme": 882
-   },
-   "2026-09-14@S": {
-    "sla1": null,
-    "n_sla1": 0,
-    "slaSub": 0,
-    "n_slaSub": 1,
     "tme": 882
    }
   },
@@ -4411,13 +4391,6 @@
     "tme": 0,
     "fechadas": 9
    },
-   "2026-09-14@S": {
-    "sla1": null,
-    "n_sla1": 0,
-    "slaSub": 0,
-    "n_slaSub": 1,
-    "tme": null
-   },
    "2026-09-21@S": {
     "sla1": 80,
     "n_sla1": 15,
@@ -4438,15 +4411,8 @@
     "tme": 17,
     "fechadas": 36
    },
-   "2026-09-25@D": {
-    "sla1": 100,
-    "n_sla1": 7,
-    "slaSub": 61.4,
-    "n_slaSub": 83,
-    "csat": 75,
-    "n_csat": 4,
-    "tme": 38,
-    "fechadas": 8
+   "2026-10-05@S": {
+    "tme": null
    },
    "2026-09-28@D": {
     "sla1": 83.3,
@@ -4521,26 +4487,15 @@
     "tma": 16036
    },
    "2026-10": {
-    "sla1": 50,
-    "n_sla1": 10,
-    "slaSub": 55.4,
-    "n_slaSub": 56,
+    "sla1": 58.3,
+    "n_sla1": 12,
+    "slaSub": 57.4,
+    "n_slaSub": 68,
     "csat": 100,
-    "n_csat": 1,
-    "tme": 379,
-    "fechadas": 11,
+    "n_csat": 2,
+    "tme": 342,
+    "fechadas": 13,
     "tma": 867
-   },
-   "2026-09-14@S": {
-    "sla1": 72.2,
-    "n_sla1": 18,
-    "slaSub": 70.2,
-    "n_slaSub": 104,
-    "csat": 100,
-    "n_csat": 7,
-    "tme": 162,
-    "fechadas": 19,
-    "tma": 11431
    },
    "2026-09-21@S": {
     "sla1": 100,
@@ -4563,15 +4518,15 @@
     "fechadas": 12,
     "tma": 867
    },
-   "2026-09-25@D": {
-    "sla1": 100,
-    "n_sla1": 4,
-    "slaSub": 71.9,
-    "n_slaSub": 32,
+   "2026-10-05@S": {
+    "sla1": 44.4,
+    "n_sla1": 9,
+    "slaSub": 60.5,
+    "n_slaSub": 38,
     "csat": 100,
     "n_csat": 2,
-    "tme": 317,
-    "fechadas": 5
+    "tme": 305,
+    "fechadas": 8
    },
    "2026-09-28@D": {
     "sla1": 66.7,
@@ -4649,6 +4604,16 @@
     "n_slaSub": 18,
     "tme": 715,
     "fechadas": 3
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 2,
+    "slaSub": 66.7,
+    "n_slaSub": 12,
+    "csat": 100,
+    "n_csat": 1,
+    "tme": 305,
+    "fechadas": 2
    }
   },
   "André Caires": {
@@ -4691,15 +4656,15 @@
     "tma": 10052
    },
    "2026-10": {
-    "sla1": 85.2,
-    "n_sla1": 27,
-    "slaSub": 65.3,
-    "n_slaSub": 277,
-    "csat": 90.9,
-    "n_csat": 11,
-    "tme": 46,
-    "fechadas": 21,
-    "tma": 16804
+    "sla1": 85.7,
+    "n_sla1": 35,
+    "slaSub": 66.3,
+    "n_slaSub": 332,
+    "csat": 93.8,
+    "n_csat": 16,
+    "tme": 45,
+    "fechadas": 26,
+    "tma": 15390
    },
    "2026-09-21@S": {
     "sla1": 0,
@@ -4718,6 +4683,17 @@
     "tme": 43,
     "fechadas": 13,
     "tma": 10052
+   },
+   "2026-10-05@S": {
+    "sla1": 90.9,
+    "n_sla1": 22,
+    "slaSub": 65.1,
+    "n_slaSub": 258,
+    "csat": 92.3,
+    "n_csat": 13,
+    "tme": 43,
+    "fechadas": 20,
+    "tma": 15390
    },
    "2026-09-29@D": {
     "sla1": 100,
@@ -4806,6 +4782,17 @@
     "tme": 65,
     "fechadas": 2,
     "tma": 14309
+   },
+   "2026-10-09@D": {
+    "sla1": 87.5,
+    "n_sla1": 8,
+    "slaSub": 70.9,
+    "n_slaSub": 55,
+    "csat": 100,
+    "n_csat": 5,
+    "tme": 37,
+    "fechadas": 5,
+    "tma": 9359
    }
   },
   "Franklin Bandeira": {
@@ -4821,26 +4808,15 @@
     "tma": 6664
    },
    "2026-10": {
-    "sla1": 56,
-    "n_sla1": 50,
-    "slaSub": 51.4,
-    "n_slaSub": 350,
-    "csat": 96.2,
-    "n_csat": 26,
-    "tme": 146,
-    "fechadas": 42,
-    "tma": 3887
-   },
-   "2026-09-14@S": {
-    "sla1": 40,
-    "n_sla1": 10,
-    "slaSub": 68,
-    "n_slaSub": 50,
-    "csat": 100,
-    "n_csat": 3,
-    "tme": 72,
-    "fechadas": 8,
-    "tma": 4496
+    "sla1": 58.2,
+    "n_sla1": 55,
+    "slaSub": 51.3,
+    "n_slaSub": 384,
+    "csat": 96.7,
+    "n_csat": 30,
+    "tme": 139,
+    "fechadas": 51,
+    "tma": 3756
    },
    "2026-09-21@S": {
     "sla1": 51.5,
@@ -4864,16 +4840,16 @@
     "fechadas": 30,
     "tma": 6282
    },
-   "2026-09-25@D": {
-    "sla1": 37.5,
-    "n_sla1": 8,
-    "slaSub": 58.7,
-    "n_slaSub": 46,
-    "csat": 100,
-    "n_csat": 2,
-    "tme": 383,
-    "fechadas": 3,
-    "tma": 7637
+   "2026-10-05@S": {
+    "sla1": 60.5,
+    "n_sla1": 43,
+    "slaSub": 49.7,
+    "n_slaSub": 292,
+    "csat": 96,
+    "n_csat": 25,
+    "tme": 140,
+    "fechadas": 44,
+    "tma": 3331
    },
    "2026-09-28@D": {
     "sla1": 66.7,
@@ -4973,6 +4949,17 @@
     "tme": 0,
     "fechadas": 5,
     "tma": 3505
+   },
+   "2026-10-09@D": {
+    "sla1": 80,
+    "n_sla1": 5,
+    "slaSub": 50,
+    "n_slaSub": 34,
+    "csat": 100,
+    "n_csat": 4,
+    "tme": 42,
+    "fechadas": 9,
+    "tma": 1843
    }
   },
   "Matheus Laosa": {
@@ -4985,25 +4972,15 @@
     "fechadas": 132
    },
    "2026-10": {
-    "sla1": 97.6,
-    "n_sla1": 41,
-    "slaSub": 73.2,
-    "n_slaSub": 421,
+    "sla1": 97.7,
+    "n_sla1": 44,
+    "slaSub": 71.5,
+    "n_slaSub": 460,
     "csat": 100,
-    "n_csat": 26,
+    "n_csat": 30,
     "tme": 0,
-    "fechadas": 74,
-    "tma": 13495
-   },
-   "2026-09-14@S": {
-    "sla1": 96.4,
-    "n_sla1": 28,
-    "slaSub": 61.7,
-    "n_slaSub": 379,
-    "csat": 88.5,
-    "n_csat": 26,
-    "tme": 34,
-    "fechadas": 42
+    "fechadas": 86,
+    "tma": 10523
    },
    "2026-09-21@S": {
     "sla1": 96.9,
@@ -5025,15 +5002,16 @@
     "tme": 0,
     "fechadas": 38
    },
-   "2026-09-25@D": {
+   "2026-10-05@S": {
     "sla1": 100,
-    "n_sla1": 5,
-    "slaSub": 67.6,
-    "n_slaSub": 37,
+    "n_sla1": 35,
+    "slaSub": 71.2,
+    "n_slaSub": 364,
     "csat": 100,
-    "n_csat": 3,
+    "n_csat": 24,
     "tme": 0,
-    "fechadas": 10
+    "fechadas": 69,
+    "tma": 10523
    },
    "2026-09-28@D": {
     "sla1": 85.7,
@@ -5125,17 +5103,21 @@
     "n_csat": 7,
     "tme": 0,
     "fechadas": 14
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 3,
+    "slaSub": 53.8,
+    "n_slaSub": 39,
+    "csat": 100,
+    "n_csat": 4,
+    "tme": 0,
+    "fechadas": 12,
+    "tma": 2642
    }
   },
   "Isabella Santos": {
    "2026-09": {
-    "sla1": 100,
-    "n_sla1": 2,
-    "slaSub": 46.2,
-    "n_slaSub": 13,
-    "tme": 226
-   },
-   "2026-09-14@S": {
     "sla1": 100,
     "n_sla1": 2,
     "slaSub": 46.2,
@@ -5149,24 +5131,14 @@
     "fechadas": 69
    },
    "2026-10": {
-    "sla1": 96.6,
-    "n_sla1": 29,
-    "slaSub": 77.8,
-    "n_slaSub": 343,
+    "sla1": 97.1,
+    "n_sla1": 35,
+    "slaSub": 79.9,
+    "n_slaSub": 393,
     "csat": 100,
-    "n_csat": 19,
-    "tme": 51,
-    "fechadas": 39
-   },
-   "2026-09-14@S": {
-    "sla1": 100,
-    "n_sla1": 10,
-    "slaSub": 67.1,
-    "n_slaSub": 85,
-    "csat": 100,
-    "n_csat": 5,
-    "tme": 89,
-    "fechadas": 13
+    "n_csat": 22,
+    "tme": 55,
+    "fechadas": 42
    },
    "2026-09-21@S": {
     "sla1": 96,
@@ -5188,15 +5160,15 @@
     "tme": 47,
     "fechadas": 31
    },
-   "2026-09-25@D": {
+   "2026-10-05@S": {
     "sla1": 100,
-    "n_sla1": 4,
-    "slaSub": 56.9,
-    "n_slaSub": 65,
+    "n_sla1": 25,
+    "slaSub": 82.9,
+    "n_slaSub": 304,
     "csat": 100,
-    "n_csat": 1,
-    "tme": 118,
-    "fechadas": 9
+    "n_csat": 17,
+    "tme": 64,
+    "fechadas": 31
    },
    "2026-09-28@D": {
     "sla1": 75,
@@ -5287,6 +5259,16 @@
     "n_csat": 3,
     "tme": 76,
     "fechadas": 9
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 6,
+    "slaSub": 94,
+    "n_slaSub": 50,
+    "csat": 100,
+    "n_csat": 3,
+    "tme": 66,
+    "fechadas": 3
    }
   },
   "Jenifer Marques": {
@@ -5295,24 +5277,14 @@
     "fechadas": 57
    },
    "2026-10": {
-    "sla1": 83.3,
-    "n_sla1": 36,
-    "slaSub": 68.9,
-    "n_slaSub": 309,
-    "csat": 91.3,
-    "n_csat": 23,
-    "tme": 87,
-    "fechadas": 40
-   },
-   "2026-09-14@S": {
-    "sla1": 100,
-    "n_sla1": 2,
-    "slaSub": 57.1,
-    "n_slaSub": 42,
-    "csat": 100,
-    "n_csat": 3,
-    "tme": 291,
-    "fechadas": 8
+    "sla1": 87.2,
+    "n_sla1": 47,
+    "slaSub": 69.9,
+    "n_slaSub": 359,
+    "csat": 92,
+    "n_csat": 25,
+    "tme": 81,
+    "fechadas": 50
    },
    "2026-09-21@S": {
     "sla1": 96.4,
@@ -5334,15 +5306,15 @@
     "tme": 53,
     "fechadas": 30
    },
-   "2026-09-25@D": {
-    "sla1": 100,
-    "n_sla1": 6,
-    "slaSub": 50,
-    "n_slaSub": 34,
-    "csat": 100,
-    "n_csat": 3,
-    "tme": 90,
-    "fechadas": 6
+   "2026-10-05@S": {
+    "sla1": 89.2,
+    "n_sla1": 37,
+    "slaSub": 70.1,
+    "n_slaSub": 278,
+    "csat": 94.7,
+    "n_csat": 19,
+    "tme": 86,
+    "fechadas": 40
    },
    "2026-09-28@D": {
     "sla1": 83.3,
@@ -5433,6 +5405,16 @@
     "n_csat": 4,
     "tme": 142,
     "fechadas": 10
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 11,
+    "slaSub": 76,
+    "n_slaSub": 50,
+    "csat": 100,
+    "n_csat": 2,
+    "tme": 61,
+    "fechadas": 10
    }
   },
   "Taluane Braz": {
@@ -5441,24 +5423,14 @@
     "fechadas": 44
    },
    "2026-10": {
-    "sla1": 71,
-    "n_sla1": 31,
-    "slaSub": 57.1,
-    "n_slaSub": 322,
+    "sla1": 75.7,
+    "n_sla1": 37,
+    "slaSub": 60.8,
+    "n_slaSub": 383,
     "csat": 100,
-    "n_csat": 18,
-    "tme": 165,
-    "fechadas": 38
-   },
-   "2026-09-14@S": {
-    "sla1": 42.9,
-    "n_sla1": 14,
-    "slaSub": 59,
-    "n_slaSub": 39,
-    "csat": 100,
-    "n_csat": 3,
-    "tme": 410,
-    "fechadas": 7
+    "n_csat": 20,
+    "tme": 144,
+    "fechadas": 47
    },
    "2026-09-21@S": {
     "sla1": 48,
@@ -5480,15 +5452,15 @@
     "tme": 110,
     "fechadas": 32
    },
-   "2026-09-25@D": {
-    "sla1": 33.3,
-    "n_sla1": 3,
-    "slaSub": 50,
-    "n_slaSub": 42,
+   "2026-10-05@S": {
+    "sla1": 74.1,
+    "n_sla1": 27,
+    "slaSub": 58.4,
+    "n_slaSub": 298,
     "csat": 100,
-    "n_csat": 1,
-    "tme": 286,
-    "fechadas": 6
+    "n_csat": 12,
+    "tme": 147,
+    "fechadas": 32
    },
    "2026-09-28@D": {
     "sla1": 100,
@@ -5579,6 +5551,16 @@
     "n_csat": 4,
     "tme": 69,
     "fechadas": 6
+   },
+   "2026-10-09@D": {
+    "sla1": 100,
+    "n_sla1": 6,
+    "slaSub": 80.3,
+    "n_slaSub": 61,
+    "csat": 100,
+    "n_csat": 2,
+    "tme": 28,
+    "fechadas": 9
    }
   },
   "Paulo Lima": {
@@ -5609,6 +5591,12 @@
     "n_csat": 6,
     "tme": 44,
     "fechadas": 12
+   },
+   "2026-10-05@S": {
+    "sla1": null,
+    "n_sla1": 0,
+    "slaSub": 66.7,
+    "n_slaSub": 3
    },
    "2026-09-30@D": {
     "sla1": 100,
@@ -5644,39 +5632,31 @@
     "n_csat": 1,
     "tme": 198,
     "fechadas": 4
-   },
-   "2026-09-25@D": {
-    "sla1": 50,
-    "n_sla1": 2,
-    "slaSub": 58.3,
-    "n_slaSub": 12,
-    "tme": 797,
-    "fechadas": 2
    }
   }
  },
  "valores_distintos": {
   "conversation.channel": [
-   "WhatsApp",
    "Conversa",
+   "WhatsApp",
    "E-mail",
    "Unknown",
    "Slack"
   ],
   "conversation.currently_assigned_team_id": [
+   "Atendimento ICP",
+   "Ongoing ICP",
    "Serviços",
-   "CX Engineering",
    "Não atribuído",
    "SupTec SMB",
-   "Ongoing ICP",
-   "SupTec ICP",
-   "Atendimento ICP",
    "Ongoing SMB",
-   "Atendimento SMB",
    "E-mail Atendimento",
-   "Consultores",
+   "Atendimento SMB",
+   "SupTec ICP",
    "Onboarding",
+   "Consultores",
    "Cobrança",
+   "CX Engineering",
    "Torre de Controle",
    "Retorno Ativo Agendamento",
    "Finalização"
