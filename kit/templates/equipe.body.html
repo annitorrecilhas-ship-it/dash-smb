@@ -1,0 +1,80 @@
+<main>
+
+  <section class="block highlight">
+    <div class="block-title">
+      <span class="dot"></span>Veículos agendados x meta — equipe<span class="tag">Meta semanal: <span id="lbl-meta-equipe"></span></span>
+      <div class="view-toggle" id="eq-meta-toggle">
+        <button type="button" class="active" data-view="semanal">Semanal</button>
+        <button type="button" data-view="mensal">Mensal</button>
+        <button type="button" data-view="diario">Diário</button>
+      </div>
+    </div>
+    <div class="dash-card">
+      <div class="dash-legend" id="leg-eq-meta"></div>
+      <div class="dash-canvas-wrap dash-canvas-tall"><canvas id="c-eq-meta"></canvas></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-title">
+      <span class="dot"></span>Por pessoa — veículos agendados x meta<span class="tag pend" id="lbl-pessoa-periodo"></span>
+      <div class="view-toggle" id="eq-pessoa-toggle">
+        <button type="button" class="active" data-view="semana">Última semana</button>
+        <button type="button" data-view="mes">Mês atual</button>
+        <button type="button" data-view="dia">Último dia útil</button>
+      </div>
+    </div>
+    <div class="dash-card">
+      <div class="dash-legend" id="leg-eq-pessoa"></div>
+      <div class="dash-canvas-wrap dash-canvas-tall"><canvas id="c-eq-pessoa"></canvas></div>
+    </div>
+    <div class="dash-card" style="border-top: 1px solid var(--border);">
+      <div class="block-note" style="padding:0;" id="note-eq-pessoa"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-title">
+      <span class="dot"></span>Por pessoa — tickets e dias para agendar
+      <div class="view-toggle" id="eq-evol-toggle">
+        <button type="button" class="active" data-view="mensal">Mensal</button>
+        <button type="button" data-view="semanal">Semanal</button>
+        <button type="button" data-view="diario">Diário</button>
+      </div>
+    </div>
+    <div class="split-2">
+      <div class="dash-card">
+        <div class="dash-card-title">Tickets agendados</div>
+        <div class="dash-legend" id="leg-eq-tickets"></div>
+        <div class="dash-canvas-wrap dash-canvas-tall"><canvas id="c-eq-tickets"></canvas></div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-card-title">Dias para agendar</div>
+        <div class="dash-legend" id="leg-eq-dias"></div>
+        <div class="dash-canvas-wrap dash-canvas-tall"><canvas id="c-eq-dias"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+{{ATEND_EQUIPE}}
+  <section class="block">
+    <div class="block-title"><span class="dot"></span>Tickets pendentes de agendamento (ao vivo)<span class="tag pend">Proprietário do ticket</span></div>
+    <div class="dash-card"><div class="stat-row" id="eq-backlog"></div></div>
+  </section>
+
+  <section class="block">
+    <div class="block-title"><span class="dot"></span><span>SLA Agendamento — prestador (<span id="lbl-prest-nome"></span>)</span></div>
+    <div class="split-2">
+      <div class="dash-card">
+        <div class="dash-card-title">% dentro do prazo — mensal</div>
+        <div class="dash-canvas-wrap"><canvas id="c-eq-sla-m"></canvas></div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-card-title">% dentro do prazo — últimas 3 semanas</div>
+        <div class="dash-canvas-wrap"><canvas id="c-eq-sla-s"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+{{VISAO_GERAL}}
+</main>
