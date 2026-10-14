@@ -218,13 +218,15 @@ function buildPage(p) {
     const ag = cfg.pessoas.filter((x) => x.papel === 'agendamento');
     const mt = metas(ag.reduce((s, x) => s + x.metaSemanal, 0));
     const corteL = local(NOW.getTime());
-    D.eq = { metaSemanalEquipe: ag.reduce((s, x) => s + x.metaSemanal, 0), metaS: mt.metaS, metaM: mt.metaM,
+    D.eq = { metaSemanalEquipe: ag.reduce((s, x) => s + x.metaSemanal, 0), metaS: mt.metaS, metaM: mt.metaM, metaD: mt.metaD,
       corte: pad(corteL.getUTCDate()) + '/' + pad(corteL.getUTCMonth() + 1),
-      pessoas: ag.map((x) => { const o = pessoaAgend(x); return { first: x.primeiroNome, metaSemanal: x.metaSemanal, potM: o.potM, potS: o.potS, metaM: o.metaM, metaS: o.metaS, ticketsM: o.ticketsM, ticketsS: o.ticketsS, diasM: o.diasM, diasS: o.diasS, backlog: o.backlog }; }) };
+      pessoas: ag.map((x) => { const o = pessoaAgend(x); return { first: x.primeiroNome, metaSemanal: x.metaSemanal, potM: o.potM, potS: o.potS, metaM: o.metaM, metaS: o.metaS, ticketsM: o.ticketsM, ticketsS: o.ticketsS, diasM: o.diasM, diasS: o.diasS, potD: o.potD, metaD: o.metaD, ticketsD: o.ticketsD, diasD: o.diasD, backlog: o.backlog }; }) };
+    if (INTERCOM) D.atend = { team: atendTeam, labelsD: ATEND_DIAS.map((d) => d.key.slice(8, 10) + '/' + d.key.slice(5, 7)),
+      pessoas: ag.map((x) => { const n = intercomAgente(x); return { first: x.primeiroNome, nome: n, s: n ? atendSeries(INTERCOM.agentes[n], 'fechadas') : null }; }) };
     const pr = cfg.pessoas.find((x) => x.papel === 'prestador');
     if (pr) D.prest = Object.assign({ first: pr.primeiroNome }, prestData(pr));
   }
-  const body = T(p.papel + '.body.html').replace('{{VISAO_GERAL}}', T('_visao_geral.html')).replace('{{ATEND_PESSOA}}', D.atend ? T('_atend_pessoa.html') : '');
+  const body = T(p.papel + '.body.html').replace('{{VISAO_GERAL}}', T('_visao_geral.html')).replace('{{ATEND_PESSOA}}', D.atend ? T('_atend_pessoa.html') : '').replace('{{ATEND_EQUIPE}}', D.atend ? T('_atend_equipe.html') : '');
   const titulo = p.papel === 'equipe' ? 'Painel da equipe Ongoing SMB (KPIs)' : 'Olá, ' + p.primeiroNome + '! Este é o seu painel de indicadores (KPIs)';
   const header = T('_header.html').replace('Olá, {{FIRST_NAME}}! Este é o seu painel de indicadores (KPIs)', titulo)
     .replace('{{LAST_UPDATE}}', fmtBR(NOW.getTime())).replace('{{NEXT_UPDATE}}', fmtBR(nextRun(NOW.getTime())));

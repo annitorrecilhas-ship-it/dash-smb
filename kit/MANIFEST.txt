@@ -1,7 +1,10 @@
-75c61e00d7b840cb013d1ea1900731b906c05059  scripts/build.js  kit/scripts/build.js
-6431b5423955bcb96e429ae45c23e2a74f037a27  shared/paineis.js  paineis.js
+5bfa685bd1b4cdeb61216b75d8ca7d861a3d0e4d  scripts/build.js  kit/scripts/build.js
+cd0ffa1d39065db0da8eab8eecdeecce194b0787  shared/paineis.js  paineis.js
 344e6ce77baac336e6173d5e011a8874e9670487  templates/_atend_pessoa.html  kit/templates/_atend_pessoa.html
 d359703979856d20e98ed465a9e3e42c8f06ae56  templates/_boot.js  kit/templates/_boot.js
 e2ccb60156777055942eb0febbd574356f0d464c  templates/_render_agendamento.js  kit/templates/_render_agendamento.js
 ed73bceb6b48d0190702c5f8d9ad0c547fc54e8d  templates/_render_common.js  kit/templates/_render_common.js
 f7fccf9a3ae203bc32d126aebec728f7bcf64d9b  templates/agendamento.body.html  kit/templates/agendamento.body.html
+58d1ca66c1c7afe25eb42f408c1c6b2291a22aa2  templates/_render_equipe.js  kit/templates/_render_equipe.js
+3c0d78044bca994b079a37b950db542a164c6e17  templates/equipe.body.html  kit/templates/equipe.body.html
+fd600078400184a8d2fd1c771f10d7d8c2078686  templates/_atend_equipe.html  kit/templates/_atend_equipe.html
