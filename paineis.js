@@ -50,8 +50,25 @@ return l+" "+dashFmtInt(n[i])
 label:"Tickets",color:DASH_C.royal,values:isM?P.volM:P.volD.values,area:!0}],unit:"int",speed:.75})}setText("lbl-first-month",D.labelsM[0].replace("*","")),
 dashSingleAxisLineChart("c-own-mensal",{labels:D.labelsM,series:[{label:me,color:DASH_C.ok,values:P.slaM}],unit:"pct"}),
 dashSingleAxisLineChart("c-own-semanal",{labels:D.labelsS,series:[{label:me,color:DASH_C.ok,values:P.slaS}],unit:"pct"}),drawVol("diario"),
-bindToggle("vol-toggle",drawVol),setHTML("note-prestador",P.note)}function renderEquipe(){
-var E=D.eq,T=D.team,CORES=[DASH_C.royal,DASH_C.ok,DASH_C.warn,DASH_C.danger,DASH_C.mist,DASH_C.inkSoft];function drawMeta(view){
+bindToggle("vol-toggle",drawVol),setHTML("note-prestador",P.note),renderFora()}function renderFora(){
+var F=D.prest.fora,tg=document.getElementById("tabs-toggle");if(F){var geral=document.getElementById("tab-geral"),fora=document.getElementById("tab-fora")
+;bindToggle("tabs-toggle",function(v){geral&&(geral.hidden="fora"===v),fora&&(fora.hidden="fora"!==v)}),setText("lbl-fora-total","("+F.rows.length+")"),
+setText("lbl-fora-periodo",F.periodo);var MOT={A:"Saiu com atraso",E:"Ainda na etapa, prazo vencido",N:"No-show depois das datas sugeridas",O:"Outro"
+},esc=function(t){return String(null==t?"":t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})},br=function(d){
+return d?d.slice(8,10)+"/"+d.slice(5,7):"—"},st={mes:"T",mot:"T",q:""}
+;setHTML("fora-mes-toggle",'<button type="button" class="active" data-view="T">Todos</button>'+F.meses.map(function(m){
+return'<button type="button" data-view="'+m.key+'">'+esc(m.label)+"</button>"}).join("")),bindToggle("fora-mes-toggle",function(v){st.mes=v,draw()}),
+bindToggle("fora-mot-toggle",function(v){st.mot=v,draw()});var busca=document.getElementById("fora-busca");busca&&busca.addEventListener("input",function(){
+st.q=busca.value||"",draw()
+}),setHTML("note-fora","<strong>Como ler:</strong> prazo = "+F.regra+" Dias úteis = gastos na etapa ÷ prazo (para quem ainda está na etapa, conta até ontem). Clique no número para abrir o ticket no HubSpot. Pela data em que o ticket entrou na sua etapa; atualizado com o painel."),
+draw()}else tg&&(tg.parentNode.style.display="none");function draw(){var q=st.q.toLowerCase(),base=F.rows.filter(function(r){
+return("T"===st.mes||r.ent.slice(0,7)===st.mes)&&(!q||(r.id+" "+(r.cli||"")+" "+r.loc).toLowerCase().indexOf(q)>=0)}),cnt={A:0,E:0,N:0,O:0}
+;base.forEach(function(r){cnt[r.mot]++
+}),setHTML("fora-cards","<div><b>"+base.length+"</b><span>casos fora do SLA</span></div><div><b>"+cnt.A+"</b><span>saíram da etapa com atraso</span></div><div><b>"+cnt.E+"</b><span>ainda na etapa, prazo vencido</span></div><div><b>"+(cnt.N+cnt.O)+"</b><span>no-show fora das datas"+(cnt.O?" e outros":"")+"</span></div>")
+;var rows=base.filter(function(r){return"T"===st.mot||r.mot===st.mot||"N"===st.mot&&"O"===r.mot});setHTML("fora-tbody",rows.length?rows.map(function(r){
+return'<tr><td><a href="'+F.link+r.id+'" target="_blank" rel="noopener">'+r.id+"</a></td><td>"+esc(r.cli||"—")+"</td><td>"+esc(r.pip)+"</td><td>"+esc(r.loc)+"</td><td>"+br(r.ent)+"</td><td>"+br(r.prazo)+"</td><td>"+br(r.sai)+'</td><td class="n">'+r.du+" / "+r.alvo+'</td><td><span class="mot mot-'+r.mot+'">'+MOT[r.mot]+"</span></td><td>"+esc(r.st)+"</td></tr>"
+}).join(""):'<tr><td colspan="10" style="text-align:center;padding:24px;color:var(--ink-soft)">Nenhum caso com esses filtros.</td></tr>')}}
+function renderEquipe(){var E=D.eq,T=D.team,CORES=[DASH_C.royal,DASH_C.ok,DASH_C.warn,DASH_C.danger,DASH_C.mist,DASH_C.inkSoft];function drawMeta(view){
 var k="diario"===view?"D":"mensal"===view?"M":"S",labels="D"===k?D.labelsDias:"S"===k?D.labelsS:D.labelsM,metaLbl="D"===k?"Meta da equipe ("+dashFmtInt(E.metaD[0])+"/dia útil)":"Meta da equipe"
 ;dashLegend("leg-eq-meta",[{label:"Veículos agendados (equipe)",color:DASH_C.royal},{label:metaLbl,color:ORANGE}]),dashGoalBarChart("c-eq-meta",{labels:labels,
 values:T["pot"+k],goals:E["meta"+k],barColor:DASH_C.royal,lineColor:ORANGE})}function drawPessoa(view){
