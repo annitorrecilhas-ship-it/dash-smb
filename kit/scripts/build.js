@@ -123,6 +123,29 @@ function prestData(p) {
   };
 }
 
+// ---------- Casos fora do SLA da prestadora (opcional: raw/maynara_fora.json, view_weekly_prestador + nome do cliente) ----------
+// Prazo = 2 dias úteis após a entrada na etapa (4 se entrou na quinta ou sexta), sem fins de semana e feriados — mesma regra da view.
+function foraData() {
+  if (!fs.existsSync(RAW('maynara_fora.json'))) return null;
+  const rows = JSON.parse(fs.readFileSync(RAW('maynara_fora.json'), 'utf8'));
+  const util = (iso) => { const d = new Date(iso + 'T00:00:00Z'), w = d.getUTCDay(); return w !== 0 && w !== 6 && !FERIADOS.has(iso); };
+  const add1 = (iso) => new Date(Date.parse(iso + 'T00:00:00Z') + DAY).toISOString().slice(0, 10);
+  const ontem = new Date(Date.parse(ymd(NOW.getTime()) + 'T00:00:00Z') - DAY).toISOString().slice(0, 10);
+  const uteisEntre = (a, b) => { let n = 0; for (let d = add1(a); d <= b; d = add1(d)) if (util(d)) n++; return n; };
+  const limite = (a, alvo) => { let n = 0, d = a; while (n < alvo) { d = add1(d); if (util(d)) n++; } return d; };
+  const cap = (t) => (t || '').trim().toLowerCase().replace(/(^|[\s/-])\S/g, (c) => c.toUpperCase()).replace(/(?<= )(De|Do|Da|Dos|Das|E|Com|O|A)(?= )/g, (m) => m.toLowerCase());
+  const out = rows.map((r) => {
+    const alvo = ['5', '6'].includes(String(r.dia_semana)) ? 4 : 2;      // Spark: 1 = domingo, 5 = quinta, 6 = sexta
+    const sai = r.saida || null;
+    const mot = sai ? 'A' : r.ticket_status === 'CONTATO REALIZADO COM O CLIENTE' ? 'E' : r.ticket_status === 'NO SHOW' ? 'N' : 'O';
+    return { id: r.ticket_id, cli: r.cliente || null, pip: r.pipeline_label === 'DEVOLUÇÃO' ? 'Devolução' : 'Serviços', loc: cap(r.cidade) + (r.uf ? '/' + r.uf : ''),
+      ent: r.entrada, prazo: limite(r.entrada, alvo), sai, du: uteisEntre(r.entrada, sai || (mot === 'N' && r.no_show ? r.no_show : ontem)), alvo, mot, st: cap(r.ticket_status) };
+  }).sort((a, b) => (a.ent < b.ent ? 1 : a.ent > b.ent ? -1 : a.id < b.id ? -1 : 1));
+  const meses = [...new Set(out.map((r) => r.ent.slice(0, 7)))].sort().reverse().map((k) => ({ key: k, label: MES[+k.slice(5, 7) - 1] + '/' + k.slice(2, 4) }));
+  return { rows: out, meses, periodo: meses.length ? meses[meses.length - 1].label + ' até ' + pad(+ontem.slice(8, 10)) + '/' + ontem.slice(5, 7) : '',
+    link: 'https://app.hubspot.com/contacts/5282301/record/0-5/', regra: '2 dias úteis após a entrada na etapa (4 se entrou na quinta ou sexta), sem fins de semana e feriados.' };
+}
+
 
 // ---------- Atendimento (Intercom) — opcional: só entra se raw/intercom_smb.json existir ----------
 // Gerado toda segunda pelo GitHub Actions do dash-smb (scripts/intercom_reporting.mjs), pela Reporting Data Export API.
@@ -213,7 +236,7 @@ function buildPage(p) {
   const D = { role: p.papel, name: p.nome, first: p.primeiroNome, labelsM: P.months.map((m) => m.label),
     labelsS: P.weeks.map((w) => w.label), labelsDias: P.days.map((d) => d.label), weekRanges: P.weeks.map((w) => w.label + ' ' + w.range), team };
   if (p.papel === 'agendamento') { const cl = local(NOW.getTime()); D.own = pessoaAgend(p); D.metaSemanal = p.metaSemanal; if (INTERCOM && (!ATEND_ONLY.length || ATEND_ONLY.includes(p.slug))) { const ag = intercomAgente(p); D.atend = { own: ag ? atendSeries(INTERCOM.agentes[ag], 'fechadas') : null, team: atendTeam, nome: ag, labelsD: ATEND_DIAS.map((d) => d.key.slice(8, 10) + '/' + d.key.slice(5, 7)) }; } D.corte = pad(cl.getUTCDate()) + '/' + pad(cl.getUTCMonth() + 1); }
-  else if (p.papel === 'prestador') { D.prest = prestData(p); }
+  else if (p.papel === 'prestador') { D.prest = prestData(p); const fo = foraData(); if (fo) D.prest.fora = fo; }
   else if (p.papel === 'equipe') {
     const ag = cfg.pessoas.filter((x) => x.papel === 'agendamento');
     const mt = metas(ag.reduce((s, x) => s + x.metaSemanal, 0));
