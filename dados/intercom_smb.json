@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-10-20T13:24:31.884Z",
+ "gerado_em": "2026-10-20T13:57:12.590Z",
  "equipe_nome": "Ongoing SMB",
  "canais": [
   "WhatsApp",
@@ -128,15 +128,15 @@
  ],
  "equipe": {
   "2026-07": {
-   "sla1": 37.7,
-   "n_sla1": 1005,
+   "sla1": 37.6,
+   "n_sla1": 1008,
    "slaSub": 48.6,
-   "n_slaSub": 8218,
+   "n_slaSub": 8239,
    "csat": 92.7,
-   "n_csat": 355,
+   "n_csat": 357,
    "tme": 1047,
-   "volume": 1270,
-   "tma": 18804
+   "volume": 1277,
+   "tma": 18835
   },
   "2026-08": {
    "sla1": 66.9,
@@ -146,8 +146,8 @@
    "csat": 94.8,
    "n_csat": 325,
    "tme": 207,
-   "volume": 1255,
-   "tma": 7010
+   "volume": 1258,
+   "tma": 6960
   },
   "2026-09": {
    "sla1": 56,
@@ -157,18 +157,18 @@
    "csat": 95.4,
    "n_csat": 346,
    "tme": 367,
-   "volume": 1208,
-   "tma": 6223
+   "volume": 1211,
+   "tma": 6226
   },
   "2026-10": {
-   "sla1": 46.2,
-   "n_sla1": 604,
-   "slaSub": 62.2,
-   "n_slaSub": 4347,
+   "sla1": 46.3,
+   "n_sla1": 605,
+   "slaSub": 62.1,
+   "n_slaSub": 4359,
    "csat": 91,
    "n_csat": 201,
    "tme": 610,
-   "volume": 650,
+   "volume": 651,
    "tma": 7789
   },
   "2026-09-28@S": {
@@ -194,14 +194,14 @@
    "tma": 6701
   },
   "2026-10-12@S": {
-   "sla1": 37,
-   "n_sla1": 211,
-   "slaSub": 61.5,
-   "n_slaSub": 1568,
+   "sla1": 37.3,
+   "n_sla1": 212,
+   "slaSub": 61.4,
+   "n_slaSub": 1572,
    "csat": 88.2,
    "n_csat": 85,
    "tme": 1043,
-   "volume": 232,
+   "volume": 233,
    "tma": 6959
   },
   "2026-10-05@D": {
@@ -293,21 +293,21 @@
    "tma": 9958
   },
   "2026-10-16@D": {
-   "sla1": 20.8,
-   "n_sla1": 53,
-   "slaSub": 65,
-   "n_slaSub": 477,
+   "sla1": 22.2,
+   "n_sla1": 54,
+   "slaSub": 64.7,
+   "n_slaSub": 481,
    "csat": 71.4,
    "n_csat": 21,
    "tme": 2214,
-   "volume": 57,
+   "volume": 58,
    "tma": 5424
   },
   "2026-10-19@D": {
-   "sla1": 29.3,
-   "n_sla1": 58,
-   "slaSub": 60,
-   "n_slaSub": 407,
+   "sla1": 29.8,
+   "n_sla1": 57,
+   "slaSub": 59.4,
+   "n_slaSub": 411,
    "csat": 80,
    "n_csat": 15,
    "tme": 1444,
@@ -900,8 +900,8 @@
    "2026-07": {
     "sla1": 90,
     "n_sla1": 70,
-    "slaSub": 63.7,
-    "n_slaSub": 1588,
+    "slaSub": 63.6,
+    "n_slaSub": 1590,
     "csat": 98.7,
     "n_csat": 78,
     "tme": 74,
@@ -1916,8 +1916,8 @@
    "2026-07": {
     "sla1": 100,
     "n_sla1": 9,
-    "slaSub": 69.9,
-    "n_slaSub": 83,
+    "slaSub": 69.4,
+    "n_slaSub": 85,
     "csat": 100,
     "n_csat": 2,
     "tme": 33,
@@ -2081,10 +2081,10 @@
    "2026-07": {
     "sla1": 100,
     "n_sla1": 9,
-    "slaSub": 67.1,
-    "n_slaSub": 158,
-    "csat": 50,
-    "n_csat": 2,
+    "slaSub": 67.5,
+    "n_slaSub": 160,
+    "csat": 66.7,
+    "n_csat": 3,
     "tme": 90,
     "fechadas": 211,
     "tma": 11638
@@ -3015,12 +3015,12 @@
   },
   "Luana Silva": {
    "2026-07": {
-    "sla1": 47.1,
-    "n_sla1": 34,
+    "sla1": 44.4,
+    "n_sla1": 36,
     "slaSub": 44.8,
-    "n_slaSub": 543,
-    "csat": 95,
-    "n_csat": 40,
+    "n_slaSub": 558,
+    "csat": 95.1,
+    "n_csat": 41,
     "tme": 794,
     "fechadas": 144,
     "tma": 16583
@@ -3034,7 +3034,7 @@
     "n_csat": 51,
     "tme": 249,
     "fechadas": 180,
-    "tma": 7162
+    "tma": 6945
    },
    "2026-09": {
     "sla1": 100,
@@ -3045,7 +3045,7 @@
     "n_csat": 13,
     "tme": 66,
     "fechadas": 58,
-    "tma": 6558
+    "tma": 6603
    },
    "2026-10": {
     "sla1": 100,
@@ -3286,7 +3286,7 @@
     "n_csat": 1,
     "tme": 0,
     "fechadas": 2,
-    "tma": 4390
+    "tma": 12217
    }
   },
   "Luis Felipe Godinho": {
