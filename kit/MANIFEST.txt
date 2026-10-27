@@ -10,3 +10,4 @@ f7fccf9a3ae203bc32d126aebec728f7bcf64d9b  templates/agendamento.body.html  kit/t
 fd600078400184a8d2fd1c771f10d7d8c2078686  templates/_atend_equipe.html  kit/templates/_atend_equipe.html
 a146ae78f8bf3ef479f7ba40230ce2d5895a6fd4  templates/_render_prestador.js  kit/templates/_render_prestador.js
 2c23db15f1975c72f26551b03cacef034093980e  templates/prestador.body.html  kit/templates/prestador.body.html
+fa36fba02e3f33e86aea1c24c60501cf1ff59c57  scripts/databricks_fora.js  kit/scripts/databricks_fora.js
